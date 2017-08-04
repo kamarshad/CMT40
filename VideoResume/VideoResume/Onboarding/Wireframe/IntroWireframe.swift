@@ -17,10 +17,10 @@ class IntroWireframeImpl: Wireframe, IntroWireframe {
     static func showOnBoardingViewController(inNavigationController navigationController: UINavigationController, delegate:IntroWireframeDelegate) {
         let wireframe = IntroWireframeImpl(navigationController: navigationController)
         
-        let firstVC = OnboardingContentViewController.content(withTitle: "What A Beautiful Photo", body: "This city background image is so beautiful.", image: UIImage(named: "blue"), buttonText: "NEXT", action: nil)
+        let firstVC = OnboardingContentViewController.content(withTitle: "Get ready to create most fascinationating Video Resume", body: "", image: UIImage(named: "blue"), buttonText: "NEXT", action: nil)
         
-        let secondVC = OnboardingContentViewController.content(withTitle: "I'm so sorry", body: "I can't get over the nice blurry background photo.", image: UIImage(named: "red"), buttonText: "NEXT", action: nil)
-        let thirdVC = OnboardingContentViewController.content(withTitle: "What A Beautiful Photo", body: "This city background image is so beautiful.", image: UIImage(named: "yellow"), buttonText: "DONE") {
+        let secondVC = OnboardingContentViewController.content(withTitle: "You will be asked few questions for which you need to record a video of yours", body: "", image: UIImage(named: "red"), buttonText: "NEXT", action: nil)
+        let thirdVC = OnboardingContentViewController.content(withTitle: "I am ready to create my Video Resume", body: "", image: UIImage(named: "yellow"), buttonText: "DONE") {
             wireframe.delegate?.introWireframeDidComplete()
             wireframe.pushToNextController()
         }
@@ -31,7 +31,8 @@ class IntroWireframeImpl: Wireframe, IntroWireframe {
     }
     
     func pushToNextController () {
-        RecordVideoWireframeImpl.push(navigationController, animated: true)
+        let questionaireVC = QuestionaireViewController.init(nibName: "QuestionaireViewController", bundle: nil)
+        self.navigationController.pushViewController(questionaireVC, animated: true)
     }
 
 }

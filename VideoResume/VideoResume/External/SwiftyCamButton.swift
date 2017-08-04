@@ -59,9 +59,9 @@ open class SwiftyCamButton: UIButton {
         createGestureRecognizers()
     }
     
-    /// UITapGestureRecognizer Function
-    @objc fileprivate func Tap() {
-        if isRecordingInProgress  {
+
+    func startStopVideoRecording() {
+        if self.isRecordingInProgress  {
             self.isRecordingInProgress = false
             invalidateTimer()
             delegate?.buttonDidEndVideoRecording()
@@ -75,6 +75,7 @@ open class SwiftyCamButton: UIButton {
     
     /// Timer Finished
     @objc fileprivate func timerFinished() {
+        self.isRecordingInProgress = false
         invalidateTimer()
         delegate?.videoRecordingDidReachMaximumDuration()
     }
@@ -85,7 +86,8 @@ open class SwiftyCamButton: UIButton {
         if let duration = delegate?.setMaxiumVideoDuration() {
             //Check if duration is set, and greater than zero
             if duration != 0.0 && duration > 0.0 {
-                timer = Timer.scheduledTimer(timeInterval: duration, target: self, selector:  #selector(SwiftyCamButton.timerFinished), userInfo: nil, repeats: false)
+                let updatedTimerDuration = duration+1
+                timer = Timer.scheduledTimer(timeInterval: updatedTimerDuration, target: self, selector:  #selector(SwiftyCamButton.timerFinished), userInfo: nil, repeats: false)
             }
         }
     }
@@ -100,7 +102,7 @@ open class SwiftyCamButton: UIButton {
     // Add Tap and LongPress gesture recognizers
     
     fileprivate func createGestureRecognizers() {
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(SwiftyCamButton.Tap))
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(SwiftyCamButton.startStopVideoRecording))
         self.addGestureRecognizer(tapGesture)
     }
 }

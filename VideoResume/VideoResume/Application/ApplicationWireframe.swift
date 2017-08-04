@@ -8,17 +8,15 @@ class ApplicationWireframe: Wireframe {
             IntroWireframeImpl.showOnBoardingViewController(inNavigationController: navigationController, delegate:self)
             return
         }
-        RecordVideoWireframeImpl.push(navigationController, animated: false)
+        
+        let questionaireVC = QuestionaireViewController.init(nibName: "QuestionaireViewController", bundle: nil)
+        navigationController.viewControllers = [questionaireVC]
     }
 }
 
 extension ApplicationWireframe {
     
     static func setLoginAsRootViewController() {
-        let navigationController = NavigationController()
-        RecordVideoWireframeImpl.push(navigationController, animated: false)
-        let appDelegate = UIApplication.shared.delegate
-        appDelegate?.window??.rootViewController = navigationController
     }
 }
 

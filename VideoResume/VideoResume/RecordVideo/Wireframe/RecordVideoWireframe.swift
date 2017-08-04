@@ -11,28 +11,36 @@ import UIKit
 protocol RecordVideoWireframe {
 
     func goBackToPreviousScreen()
+    func goToNextScreen()
 }
 
-class RecordVideoWireframeImpl: RecordVideoWireframe {
+protocol VideoRecordDelegate {
     
-    static func push(_ navigationController: UINavigationController, animated:Bool) {
-        let wireframe = RecordVideoWireframeImpl()
+    func videoRecordedSuccessfully(recordedSuccessfully: Bool)
+}
+
+class RecordVideoWireframeImpl: Wireframe, RecordVideoWireframe {
+    fileprivate var delegate:VideoRecordDelegate?
+    
+    static func push(_ navigationController: UINavigationController, animated:Bool, fileNameForVideo: String, delegate: VideoRecordDelegate? = nil) {
+        let wireframe = RecordVideoWireframeImpl(navigationController: navigationController)
+        wireframe.delegate = delegate
         let view = RecordVideoViewController.instantiateFromStoryboard()
-        let screenInteractor = RecordVideoScreenInteractorImpl()
+        let screenInteractor = RecordVideoScreenInteractorImpl(name: fileNameForVideo)
         let presenter = RecordVideoPresenter(wireframe: wireframe, screenInteractor: screenInteractor)
         view.presenter = presenter
-        
-        if navigationController.viewControllers.count>0 {
-            navigationController.pushViewController(view, animated: animated)
-        }
-        else {
-            navigationController.viewControllers = [view]
-        }
+        navigationController.pushViewController(view, animated: animated)
         navigationController.setNavigationBarHidden(true, animated: false)
     }
     
     func goBackToPreviousScreen() {
-    
+        self.navigationController.popViewController(animated: false)
     }
     
+    func goToNextScreen() {
+        //Call delegate methods
+        self.delegate?.videoRecordedSuccessfully(recordedSuccessfully: true)
+        self.navigationController.popViewController(animated: true)
+    }
+
 }

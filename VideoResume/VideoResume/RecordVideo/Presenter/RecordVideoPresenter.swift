@@ -17,4 +17,27 @@ class RecordVideoPresenter: NSObject {
         self.screenInteractor = screenInteractor
         self.wireframe = wireframe
     }
+    
+    func getOutputFileName() -> String {
+        return self.screenInteractor.getVideoFileName()
+    }
+    
+    func goToNextScreen() {
+        self.wireframe.goToNextScreen()
+    }
+    
+    func goBackToPreviousScreen() {
+        self.wireframe.goBackToPreviousScreen()
+    }
+
+}
+
+struct RecordDTO {
+   
+    var fileName:String
+    
+    init(fileName:String) {
+        self.fileName = fileName
+    }
+
 }

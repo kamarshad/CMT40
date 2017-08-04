@@ -5,3 +5,4 @@
 
 #import "OnboardingContentViewController.h"
 #import "OnboardingViewController.h"
+#import <MZTimerLabel/MZTimerLabel.h>

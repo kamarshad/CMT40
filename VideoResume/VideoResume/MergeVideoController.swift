@@ -17,16 +17,24 @@ class MergeVideoController: NSObject {
     
     var firstAsset: AVAsset?
     var secondAsset: AVAsset?
-//        var audioAsset: AVAsset?
+    var thirdAsset: AVAsset?
+    var fourthAsset: AVAsset?
+    var fifthAsset: AVAsset?
+
+    //        var audioAsset: AVAsset?
     //    var loadingAssetOne = false
     
     override init() {
         super.init()
         // Do any additional setup after loading the view.
-        self.firstAsset = AVAsset(url: URL(fileURLWithPath: Bundle.main.path(forResource: "TempVideo1", ofType: "MOV")!))
-        self.secondAsset = AVAsset(url: URL(fileURLWithPath: Bundle.main.path(forResource: "TempVideo2", ofType: "MOV")!))
-//        self.audioAsset = AVAsset(url: URL(fileURLWithPath: Bundle.main.path(forResource: "audio1", ofType: "mp3")!))
-        self.merge(sender: nil)
+        
+        let tempDirectoryPath = NSTemporaryDirectory()
+        
+        self.firstAsset = AVAsset(url: URL(fileURLWithPath: tempDirectoryPath.appending("/Video1.mov")))
+        self.secondAsset = AVAsset(url: URL(fileURLWithPath: tempDirectoryPath.appending("/Video2.mov")))
+        self.thirdAsset = AVAsset(url: URL(fileURLWithPath: tempDirectoryPath.appending("/Video3.mov")))
+        self.fourthAsset = AVAsset(url: URL(fileURLWithPath: tempDirectoryPath.appending("/Video4.mov")))
+        self.fifthAsset = AVAsset(url: URL(fileURLWithPath: tempDirectoryPath.appending("/Video5.mov")))
     }
     
     
@@ -76,7 +84,7 @@ class MergeVideoController: NSObject {
         return instruction
     }
     
-    func merge(sender: AnyObject?) {
+    func merge(sender: AnyObject?, completionHandler: @escaping () -> ()) {
         if let firstAsset = firstAsset, let secondAsset = secondAsset {
             //            activityMonitor.startAnimating()
             
@@ -98,18 +106,48 @@ class MergeVideoController: NSObject {
                 print("Failed to load first track")
             }
             
+            // 2 - Create two video tracks
+            let thirdTrack = mixComposition.addMutableTrack(withMediaType: AVMediaTypeVideo, preferredTrackID: Int32(kCMPersistentTrackID_Invalid))
+            do {
+                try thirdTrack.insertTimeRange(CMTimeRangeMake(kCMTimeZero, (self.thirdAsset?.duration)!), of: (self.thirdAsset?.tracks(withMediaType: AVMediaTypeVideo)[0])!, at: CMTimeAdd(firstAsset.duration, secondAsset.duration))
+            } catch {
+                print("Failed to load first track")
+            }
+            
+            let fourthTrack = mixComposition.addMutableTrack(withMediaType: AVMediaTypeVideo, preferredTrackID: Int32(kCMPersistentTrackID_Invalid))
+            let timeForThird = CMTimeAdd(firstAsset.duration, secondAsset.duration)
+            do {
+                try fourthTrack.insertTimeRange(CMTimeRangeMake(kCMTimeZero, (self.fourthAsset?.duration)!), of: (self.fourthAsset?.tracks(withMediaType: AVMediaTypeVideo)[0])!, at: CMTimeAdd(timeForThird, thirdAsset!.duration))
+            } catch {
+                print("Failed to load first track")
+            }
+            
+            let fifthTrack = mixComposition.addMutableTrack(withMediaType: AVMediaTypeVideo, preferredTrackID: Int32(kCMPersistentTrackID_Invalid))
+            let timeForFourth = CMTimeAdd(timeForThird, (thirdAsset?.duration)!)
+            do {
+                try fifthTrack.insertTimeRange(CMTimeRangeMake(kCMTimeZero, (self.fifthAsset?.duration)!), of: (self.fifthAsset?.tracks(withMediaType: AVMediaTypeVideo)[0])!, at: CMTimeAdd(timeForFourth, fourthAsset!.duration))
+            } catch {
+                print("Failed to load first track")
+            }
+            
+            
+            let totalTime = CMTimeAdd(timeForFourth, (fifthAsset?.duration)!)
+            
             // 2.1
             let mainInstruction = AVMutableVideoCompositionInstruction()
-            mainInstruction.timeRange = CMTimeRangeMake(kCMTimeZero, CMTimeAdd(firstAsset.duration, secondAsset.duration))
+            mainInstruction.timeRange = CMTimeRangeMake(kCMTimeZero, totalTime)
             
             
             // 2.2
             let firstInstruction = videoCompositionInstructionForTrack(track: firstTrack, asset: firstAsset)
             firstInstruction.setOpacity(0.0, at: firstAsset.duration)
             let secondInstruction = videoCompositionInstructionForTrack(track: secondTrack, asset: secondAsset)
+            let thirdInstruction = videoCompositionInstructionForTrack(track: thirdTrack, asset: thirdAsset!)
+            let fourthInstruction = videoCompositionInstructionForTrack(track: fourthTrack, asset: fourthAsset!)
+            let fifthInstruction = videoCompositionInstructionForTrack(track: fifthTrack, asset: fifthAsset!)
             
             // 2.3
-            mainInstruction.layerInstructions = [firstInstruction, secondInstruction]
+            mainInstruction.layerInstructions = [firstInstruction, secondInstruction, thirdInstruction, fourthInstruction, fifthInstruction]
             let mainComposition = AVMutableVideoComposition()
             mainComposition.instructions = [mainInstruction]
             mainComposition.frameDuration = CMTimeMake(1, 30)
@@ -135,6 +173,45 @@ class MergeVideoController: NSObject {
                     try audioTrack.insertTimeRange(CMTimeRangeMake(firstAsset.duration, secondAsset.duration),
                                                    of: loadedAudioAsset.tracks(withMediaType: AVMediaTypeAudio)[0] ,
                                                    at: firstAsset.duration)
+                } catch _ {
+                    print("Failed to load Audio track")
+                }
+            }
+            
+            // 3.2 - Audio track
+            if let loadedAudioAsset = self.thirdAsset {
+                let audioTrack = mixComposition.addMutableTrack(withMediaType: AVMediaTypeAudio, preferredTrackID: 0)
+                do {
+                    try audioTrack.insertTimeRange(CMTimeRangeMake(CMTimeAdd(firstAsset.duration, secondAsset.duration), (thirdAsset?.duration)!),
+                                                   of: loadedAudioAsset.tracks(withMediaType: AVMediaTypeAudio)[0] ,
+                                                   at: CMTimeAdd(firstAsset.duration, secondAsset.duration))
+                } catch _ {
+                    print("Failed to load Audio track")
+                }
+            }
+            
+            // 3.3 - Audio track
+            if let loadedAudioAsset = self.fourthAsset {
+                let audioTrack = mixComposition.addMutableTrack(withMediaType: AVMediaTypeAudio, preferredTrackID: 0)
+                let newTime = CMTimeAdd(timeForThird, (thirdAsset?.duration)!)
+                do {
+                    try audioTrack.insertTimeRange(CMTimeRangeMake(newTime, (fourthAsset?.duration)!),
+                                                   of: loadedAudioAsset.tracks(withMediaType: AVMediaTypeAudio)[0] ,
+                                                   at: newTime)
+                } catch _ {
+                    print("Failed to load Audio track")
+                }
+            }
+            
+            // 3.4 - Audio track
+            if let loadedAudioAsset = self.fifthAsset {
+                let audioTrack = mixComposition.addMutableTrack(withMediaType: AVMediaTypeAudio, preferredTrackID: 0)
+                let newTime = CMTimeAdd(timeForThird, (thirdAsset?.duration)!)
+                let newTime1 = CMTimeAdd(newTime, (fourthAsset?.duration)!)
+                do {
+                    try audioTrack.insertTimeRange(CMTimeRangeMake(newTime1, (fifthAsset?.duration)!),
+                                                   of: loadedAudioAsset.tracks(withMediaType: AVMediaTypeAudio)[0] ,
+                                                   at: newTime1)
                 } catch _ {
                     print("Failed to load Audio track")
                 }
@@ -169,9 +246,14 @@ class MergeVideoController: NSObject {
             
             exporter.exportAsynchronously(completionHandler: {
                 print("video saved at path: \(savePath)")
-                self.firstAsset = nil
-                self.secondAsset = nil
-
+                
+                completionHandler()
+//                
+//                self.firstAsset = nil
+//                self.secondAsset = nil
+//                self.thirdAsset = nil
+//                self.fourthAsset = nil
+//                self.fifthAsset = nil
             })
         }
     }
