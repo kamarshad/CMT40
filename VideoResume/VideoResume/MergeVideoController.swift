@@ -106,48 +106,18 @@ class MergeVideoController: NSObject {
                 print("Failed to load first track")
             }
             
-            // 2 - Create two video tracks
-            let thirdTrack = mixComposition.addMutableTrack(withMediaType: AVMediaTypeVideo, preferredTrackID: Int32(kCMPersistentTrackID_Invalid))
-            do {
-                try thirdTrack.insertTimeRange(CMTimeRangeMake(kCMTimeZero, (self.thirdAsset?.duration)!), of: (self.thirdAsset?.tracks(withMediaType: AVMediaTypeVideo)[0])!, at: CMTimeAdd(firstAsset.duration, secondAsset.duration))
-            } catch {
-                print("Failed to load first track")
-            }
-            
-            let fourthTrack = mixComposition.addMutableTrack(withMediaType: AVMediaTypeVideo, preferredTrackID: Int32(kCMPersistentTrackID_Invalid))
-            let timeForThird = CMTimeAdd(firstAsset.duration, secondAsset.duration)
-            do {
-                try fourthTrack.insertTimeRange(CMTimeRangeMake(kCMTimeZero, (self.fourthAsset?.duration)!), of: (self.fourthAsset?.tracks(withMediaType: AVMediaTypeVideo)[0])!, at: CMTimeAdd(timeForThird, thirdAsset!.duration))
-            } catch {
-                print("Failed to load first track")
-            }
-            
-            let fifthTrack = mixComposition.addMutableTrack(withMediaType: AVMediaTypeVideo, preferredTrackID: Int32(kCMPersistentTrackID_Invalid))
-            let timeForFourth = CMTimeAdd(timeForThird, (thirdAsset?.duration)!)
-            do {
-                try fifthTrack.insertTimeRange(CMTimeRangeMake(kCMTimeZero, (self.fifthAsset?.duration)!), of: (self.fifthAsset?.tracks(withMediaType: AVMediaTypeVideo)[0])!, at: CMTimeAdd(timeForFourth, fourthAsset!.duration))
-            } catch {
-                print("Failed to load first track")
-            }
-            
-            
-            let totalTime = CMTimeAdd(timeForFourth, (fifthAsset?.duration)!)
-            
             // 2.1
             let mainInstruction = AVMutableVideoCompositionInstruction()
-            mainInstruction.timeRange = CMTimeRangeMake(kCMTimeZero, totalTime)
+            mainInstruction.timeRange = CMTimeRangeMake(kCMTimeZero, CMTimeAdd(firstAsset.duration, secondAsset.duration))
             
             
             // 2.2
             let firstInstruction = videoCompositionInstructionForTrack(track: firstTrack, asset: firstAsset)
             firstInstruction.setOpacity(0.0, at: firstAsset.duration)
             let secondInstruction = videoCompositionInstructionForTrack(track: secondTrack, asset: secondAsset)
-            let thirdInstruction = videoCompositionInstructionForTrack(track: thirdTrack, asset: thirdAsset!)
-            let fourthInstruction = videoCompositionInstructionForTrack(track: fourthTrack, asset: fourthAsset!)
-            let fifthInstruction = videoCompositionInstructionForTrack(track: fifthTrack, asset: fifthAsset!)
             
             // 2.3
-            mainInstruction.layerInstructions = [firstInstruction, secondInstruction, thirdInstruction, fourthInstruction, fifthInstruction]
+            mainInstruction.layerInstructions = [firstInstruction, secondInstruction]
             let mainComposition = AVMutableVideoComposition()
             mainComposition.instructions = [mainInstruction]
             mainComposition.frameDuration = CMTimeMake(1, 30)
@@ -178,54 +148,16 @@ class MergeVideoController: NSObject {
                 }
             }
             
-            // 3.2 - Audio track
-            if let loadedAudioAsset = self.thirdAsset {
-                let audioTrack = mixComposition.addMutableTrack(withMediaType: AVMediaTypeAudio, preferredTrackID: 0)
-                do {
-                    try audioTrack.insertTimeRange(CMTimeRangeMake(CMTimeAdd(firstAsset.duration, secondAsset.duration), (thirdAsset?.duration)!),
-                                                   of: loadedAudioAsset.tracks(withMediaType: AVMediaTypeAudio)[0] ,
-                                                   at: CMTimeAdd(firstAsset.duration, secondAsset.duration))
-                } catch _ {
-                    print("Failed to load Audio track")
-                }
-            }
-            
-            // 3.3 - Audio track
-            if let loadedAudioAsset = self.fourthAsset {
-                let audioTrack = mixComposition.addMutableTrack(withMediaType: AVMediaTypeAudio, preferredTrackID: 0)
-                let newTime = CMTimeAdd(timeForThird, (thirdAsset?.duration)!)
-                do {
-                    try audioTrack.insertTimeRange(CMTimeRangeMake(newTime, (fourthAsset?.duration)!),
-                                                   of: loadedAudioAsset.tracks(withMediaType: AVMediaTypeAudio)[0] ,
-                                                   at: newTime)
-                } catch _ {
-                    print("Failed to load Audio track")
-                }
-            }
-            
-            // 3.4 - Audio track
-            if let loadedAudioAsset = self.fifthAsset {
-                let audioTrack = mixComposition.addMutableTrack(withMediaType: AVMediaTypeAudio, preferredTrackID: 0)
-                let newTime = CMTimeAdd(timeForThird, (thirdAsset?.duration)!)
-                let newTime1 = CMTimeAdd(newTime, (fourthAsset?.duration)!)
-                do {
-                    try audioTrack.insertTimeRange(CMTimeRangeMake(newTime1, (fifthAsset?.duration)!),
-                                                   of: loadedAudioAsset.tracks(withMediaType: AVMediaTypeAudio)[0] ,
-                                                   at: newTime1)
-                } catch _ {
-                    print("Failed to load Audio track")
-                }
-            }
-            
             
             // 4 - Get path
-            let documentDirectory = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0]
-            let dateFormatter = DateFormatter()
-            dateFormatter.dateStyle = .long
-            dateFormatter.timeStyle = .short
-//            let date = dateFormatter.string(from: NSDate() as Date)
+//            let documentDirectory = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0]
+//            let dateFormatter = DateFormatter()
+//            dateFormatter.dateStyle = .long
+//            dateFormatter.timeStyle = .short
+//            //            let date = dateFormatter.string(from: NSDate() as Date)
+            let tempDirectoryPath = NSTemporaryDirectory()
             let randomNumber = arc4random_uniform(100)
-            let savePath = (documentDirectory as NSString).appendingPathComponent("mergeVideo\(String(randomNumber)).mov")
+            let savePath = (tempDirectoryPath as NSString).appendingPathComponent("mergeVideo\(String(randomNumber)).mov")
             let url = NSURL(fileURLWithPath: savePath)
             
             print("SavePath : \(savePath)")
@@ -247,13 +179,10 @@ class MergeVideoController: NSObject {
             exporter.exportAsynchronously(completionHandler: {
                 print("video saved at path: \(savePath)")
                 
-                completionHandler(videoURL: url)
-//                
-//                self.firstAsset = nil
-//                self.secondAsset = nil
-//                self.thirdAsset = nil
-//                self.fourthAsset = nil
-//                self.fifthAsset = nil
+                DispatchQueue.main.asyncAfter(deadline: .now() + 60.0) { // your code here
+                    completionHandler(url as URL)
+                }
+                
             })
         }
     }

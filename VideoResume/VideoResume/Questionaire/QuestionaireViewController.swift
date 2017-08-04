@@ -25,7 +25,7 @@ class QuestionaireViewController: UIViewController, VideoRecordDelegate {
 
     override func viewWillAppear(_ animated: Bool) {
         
-        if counter < 5 {
+        if counter < 2 {
             self.QuestionLabel.text = questionArray[counter]
             self.btnGoToNextScreen.setTitle("Lets record!", for: .normal)
         } else {
@@ -41,7 +41,12 @@ class QuestionaireViewController: UIViewController, VideoRecordDelegate {
     
 
     @IBAction func goToNextScreen(_ sender: Any) {
-        if counter < 5 {
+//        let mergeObj = MergeVideoController()
+//        mergeObj.merge(sender: sender as AnyObject, completionHandler: {_ in
+//            print("Completion received")
+//        })
+        
+        if counter < 2 {
             //Go to recording screen with data
             let videoCounterText = String(counter+1)
             let videoFileName = "Video"+videoCounterText
@@ -51,7 +56,7 @@ class QuestionaireViewController: UIViewController, VideoRecordDelegate {
             //Go to video merging screen
             
             let mergeObj = MergeVideoController()
-            mergeObj.merge(sender: sender as AnyObject, completionHandler: {
+            mergeObj.merge(sender: sender as AnyObject, completionHandler: {_ in 
                 print("Completion received")
             })
         }
