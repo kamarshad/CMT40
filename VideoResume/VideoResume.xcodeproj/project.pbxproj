@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		508DE2D74678EFE67E282DDB /* Pods_VideoResumeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D579FC18DEEB4FB435E6B02 /* Pods_VideoResumeTests.framework */; };
 		B7E1F9EFA46788B34CDEAF61 /* Pods_VideoResume.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 246C18A5CC2C27DD7F848A4C /* Pods_VideoResume.framework */; };
+		DD17E9621F3450BB009BFCA0 /* audio1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DD17E9611F3450BB009BFCA0 /* audio1.mp3 */; };
+		DD17E9651F3456E8009BFCA0 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD17E9631F3456E8009BFCA0 /* ResultViewController.swift */; };
+		DD17E9661F3456E8009BFCA0 /* ResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD17E9641F3456E8009BFCA0 /* ResultViewController.xib */; };
+		DD249A991F3438E800EEFB4D /* TempVideo1.MOV in Resources */ = {isa = PBXBuildFile; fileRef = DD249A971F3438E700EEFB4D /* TempVideo1.MOV */; };
+		DD249A9A1F3438E800EEFB4D /* TempVideo2.MOV in Resources */ = {isa = PBXBuildFile; fileRef = DD249A981F3438E800EEFB4D /* TempVideo2.MOV */; };
+		DDE0BD2C1F344C7500C50524 /* MergeVideoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE0BD2B1F344C7500C50524 /* MergeVideoController.swift */; };
 		E24460001F33926C00C9063E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2445FFF1F33926C00C9063E /* AppDelegate.swift */; };
 		E24460021F33926C00C9063E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24460011F33926C00C9063E /* ViewController.swift */; };
 		E24460071F33926C00C9063E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E24460061F33926C00C9063E /* Assets.xcassets */; };
@@ -83,6 +89,12 @@
 		5D579FC18DEEB4FB435E6B02 /* Pods_VideoResumeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VideoResumeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		673A80E7FA0BE52CA51722ED /* Pods-VideoResumeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoResumeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VideoResumeTests/Pods-VideoResumeTests.release.xcconfig"; sourceTree = "<group>"; };
 		AFBA6471A8DCD78FA1EE8025 /* Pods-VideoResumeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoResumeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VideoResumeTests/Pods-VideoResumeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DD17E9611F3450BB009BFCA0 /* audio1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = audio1.mp3; sourceTree = "<group>"; };
+		DD17E9631F3456E8009BFCA0 /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		DD17E9641F3456E8009BFCA0 /* ResultViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ResultViewController.xib; sourceTree = "<group>"; };
+		DD249A971F3438E700EEFB4D /* TempVideo1.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = TempVideo1.MOV; sourceTree = "<group>"; };
+		DD249A981F3438E800EEFB4D /* TempVideo2.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = TempVideo2.MOV; sourceTree = "<group>"; };
+		DDE0BD2B1F344C7500C50524 /* MergeVideoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MergeVideoController.swift; sourceTree = "<group>"; };
 		E2445FFC1F33926C00C9063E /* VideoResume.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoResume.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2445FFF1F33926C00C9063E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E24460011F33926C00C9063E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -213,6 +225,9 @@
 				E24460081F33926C00C9063E /* LaunchScreen.storyboard */,
 				E244600B1F33926C00C9063E /* Info.plist */,
 				E2E05AAA1F33A71400B2DCC8 /* media */,
+				DDE0BD2B1F344C7500C50524 /* MergeVideoController.swift */,
+				DD17E9631F3456E8009BFCA0 /* ResultViewController.swift */,
+				DD17E9641F3456E8009BFCA0 /* ResultViewController.xib */,
 			);
 			path = VideoResume;
 			sourceTree = "<group>";
@@ -386,6 +401,7 @@
 		E2E05AAA1F33A71400B2DCC8 /* media */ = {
 			isa = PBXGroup;
 			children = (
+				DD17E9611F3450BB009BFCA0 /* audio1.mp3 */,
 				E2E05AAB1F33A71400B2DCC8 /* blue.png */,
 				E2E05AAC1F33A71400B2DCC8 /* charcoal.png */,
 				E2E05AAD1F33A71400B2DCC8 /* coffee.png */,
@@ -405,6 +421,8 @@
 				E2E05ABB1F33A71400B2DCC8 /* space4.png */,
 				E2E05ABC1F33A71400B2DCC8 /* street.png */,
 				E2E05ABD1F33A71400B2DCC8 /* sun.mp4 */,
+				DD249A971F3438E700EEFB4D /* TempVideo1.MOV */,
+				DD249A981F3438E800EEFB4D /* TempVideo2.MOV */,
 				E2E05ABE1F33A71400B2DCC8 /* testtube.png */,
 				E2E05ABF1F33A71400B2DCC8 /* tree.png */,
 				E2E05AC01F33A71400B2DCC8 /* video.mp4 */,
@@ -525,14 +543,18 @@
 				E2E05ACD1F33A71400B2DCC8 /* nasalization rg.ttf in Resources */,
 				E2E05ADD1F33A71400B2DCC8 /* video2.mp4 in Resources */,
 				E2E05AD61F33A71400B2DCC8 /* space4.png in Resources */,
+				DD249A991F3438E800EEFB4D /* TempVideo1.MOV in Resources */,
 				E2E05ACF1F33A71400B2DCC8 /* red.png in Resources */,
 				E2E05AD31F33A71400B2DCC8 /* space1.png in Resources */,
+				DD17E9661F3456E8009BFCA0 /* ResultViewController.xib in Resources */,
 				E2E05AD71F33A71400B2DCC8 /* street.png in Resources */,
 				E2E05ACB1F33A71400B2DCC8 /* layers.png in Resources */,
+				DD249A9A1F3438E800EEFB4D /* TempVideo2.MOV in Resources */,
 				E27A64F21F3420A1009752D0 /* RecordVideoStoryboard.storyboard in Resources */,
 				E2E05AD81F33A71400B2DCC8 /* sun.mp4 in Resources */,
 				E2E05ADA1F33A71400B2DCC8 /* tree.png in Resources */,
 				E2E05ACE1F33A71400B2DCC8 /* purple.png in Resources */,
+				DD17E9621F3450BB009BFCA0 /* audio1.mp3 in Resources */,
 				E2E05AC81F33A71400B2DCC8 /* coffee.png in Resources */,
 				E24460071F33926C00C9063E /* Assets.xcassets in Resources */,
 				E2E05ACC1F33A71400B2DCC8 /* milky_way.jpg in Resources */,
@@ -657,6 +679,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDE0BD2C1F344C7500C50524 /* MergeVideoController.swift in Sources */,
 				E24460021F33926C00C9063E /* ViewController.swift in Sources */,
 				E244603B1F3393A100C9063E /* RecordVideoAdaptor.swift in Sources */,
 				E244602D1F3392CB00C9063E /* SwiftyCamViewControllerDelegate.swift in Sources */,
@@ -669,6 +692,7 @@
 				E24463741F3395BD00C9063E /* IntroPresenter.swift in Sources */,
 				E244602A1F3392CB00C9063E /* PreviewView.swift in Sources */,
 				E2E05AA91F33A2E900B2DCC8 /* ApplicationWireframe.swift in Sources */,
+				DD17E9651F3456E8009BFCA0 /* ResultViewController.swift in Sources */,
 				E24463801F3395BD00C9063E /* IntroWireframe.swift in Sources */,
 				E24460391F33937500C9063E /* RecordVideoPresenter.swift in Sources */,
 				E2E05AA21F33A2CA00B2DCC8 /* UIViewController.swift in Sources */,
