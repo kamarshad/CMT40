@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		508DE2D74678EFE67E282DDB /* Pods_VideoResumeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D579FC18DEEB4FB435E6B02 /* Pods_VideoResumeTests.framework */; };
+		668F12D61F342F4F001482EA /* OnboardingContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 668F12D31F342F4F001482EA /* OnboardingContentViewController.m */; };
+		668F12D71F342F4F001482EA /* OnboardingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 668F12D51F342F4F001482EA /* OnboardingViewController.m */; };
 		B7E1F9EFA46788B34CDEAF61 /* Pods_VideoResume.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 246C18A5CC2C27DD7F848A4C /* Pods_VideoResume.framework */; };
 		E24460001F33926C00C9063E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2445FFF1F33926C00C9063E /* AppDelegate.swift */; };
 		E24460021F33926C00C9063E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24460011F33926C00C9063E /* ViewController.swift */; };
@@ -29,8 +31,6 @@
 		E24463751F3395BD00C9063E /* IntroViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E244635F1F3395BD00C9063E /* IntroViewAdapter.swift */; };
 		E24463801F3395BD00C9063E /* IntroWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24463711F3395BD00C9063E /* IntroWireframe.swift */; };
 		E27A64F21F3420A1009752D0 /* RecordVideoStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E27A64F11F3420A1009752D0 /* RecordVideoStoryboard.storyboard */; };
-		E2E05A8D1F339D5D00B2DCC8 /* OnboardingContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E05A881F339D5D00B2DCC8 /* OnboardingContentViewController.m */; };
-		E2E05A8E1F339D5D00B2DCC8 /* OnboardingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E05A8A1F339D5D00B2DCC8 /* OnboardingViewController.m */; };
 		E2E05AA21F33A2CA00B2DCC8 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E05A9C1F33A2CA00B2DCC8 /* UIViewController.swift */; };
 		E2E05AA31F33A2CA00B2DCC8 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E05A9E1F33A2CA00B2DCC8 /* Constant.swift */; };
 		E2E05AA41F33A2CA00B2DCC8 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E05A9F1F33A2CA00B2DCC8 /* NavigationController.swift */; };
@@ -81,6 +81,10 @@
 		3F62437FFD4E8553016830A8 /* Pods-VideoResume.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoResume.release.xcconfig"; path = "Pods/Target Support Files/Pods-VideoResume/Pods-VideoResume.release.xcconfig"; sourceTree = "<group>"; };
 		43930069A8EF3CD83436C3D2 /* Pods-VideoResume.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoResume.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VideoResume/Pods-VideoResume.debug.xcconfig"; sourceTree = "<group>"; };
 		5D579FC18DEEB4FB435E6B02 /* Pods_VideoResumeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VideoResumeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		668F12D21F342F4F001482EA /* OnboardingContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OnboardingContentViewController.h; sourceTree = "<group>"; };
+		668F12D31F342F4F001482EA /* OnboardingContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OnboardingContentViewController.m; sourceTree = "<group>"; };
+		668F12D41F342F4F001482EA /* OnboardingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OnboardingViewController.h; sourceTree = "<group>"; };
+		668F12D51F342F4F001482EA /* OnboardingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OnboardingViewController.m; sourceTree = "<group>"; };
 		673A80E7FA0BE52CA51722ED /* Pods-VideoResumeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoResumeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VideoResumeTests/Pods-VideoResumeTests.release.xcconfig"; sourceTree = "<group>"; };
 		AFBA6471A8DCD78FA1EE8025 /* Pods-VideoResumeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoResumeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VideoResumeTests/Pods-VideoResumeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E2445FFC1F33926C00C9063E /* VideoResume.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoResume.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -107,10 +111,6 @@
 		E244635F1F3395BD00C9063E /* IntroViewAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewAdapter.swift; sourceTree = "<group>"; };
 		E24463711F3395BD00C9063E /* IntroWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroWireframe.swift; sourceTree = "<group>"; };
 		E27A64F11F3420A1009752D0 /* RecordVideoStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RecordVideoStoryboard.storyboard; sourceTree = "<group>"; };
-		E2E05A871F339D5D00B2DCC8 /* OnboardingContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OnboardingContentViewController.h; sourceTree = "<group>"; };
-		E2E05A881F339D5D00B2DCC8 /* OnboardingContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OnboardingContentViewController.m; sourceTree = "<group>"; };
-		E2E05A891F339D5D00B2DCC8 /* OnboardingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OnboardingViewController.h; sourceTree = "<group>"; };
-		E2E05A8A1F339D5D00B2DCC8 /* OnboardingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OnboardingViewController.m; sourceTree = "<group>"; };
 		E2E05A951F339E0500B2DCC8 /* VideoResume-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VideoResume-Bridging-Header.h"; sourceTree = "<group>"; };
 		E2E05A9C1F33A2CA00B2DCC8 /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		E2E05A9E1F33A2CA00B2DCC8 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
@@ -167,6 +167,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		668F12CF1F342F4F001482EA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				668F12D01F342F4F001482EA /* Onboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		668F12D01F342F4F001482EA /* Onboard */ = {
+			isa = PBXGroup;
+			children = (
+				668F12D11F342F4F001482EA /* Source */,
+			);
+			path = Onboard;
+			sourceTree = "<group>";
+		};
+		668F12D11F342F4F001482EA /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				668F12D21F342F4F001482EA /* OnboardingContentViewController.h */,
+				668F12D31F342F4F001482EA /* OnboardingContentViewController.m */,
+				668F12D41F342F4F001482EA /* OnboardingViewController.h */,
+				668F12D51F342F4F001482EA /* OnboardingViewController.m */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
 		9ACC221582E1644F329181BA /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -286,9 +313,9 @@
 		E24460401F33950100C9063E /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
+				668F12CF1F342F4F001482EA /* View */,
 				E244635A1F3395BD00C9063E /* Interactor */,
 				E244635D1F3395BD00C9063E /* Presenter */,
-				E24463601F3395BD00C9063E /* View */,
 				E24463701F3395BD00C9063E /* Wireframe */,
 			);
 			path = Onboarding;
@@ -311,40 +338,12 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
-		E24463601F3395BD00C9063E /* View */ = {
-			isa = PBXGroup;
-			children = (
-				E2E05A831F339D5D00B2DCC8 /* Onboard */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		E24463701F3395BD00C9063E /* Wireframe */ = {
 			isa = PBXGroup;
 			children = (
 				E24463711F3395BD00C9063E /* IntroWireframe.swift */,
 			);
 			path = Wireframe;
-			sourceTree = "<group>";
-		};
-		E2E05A831F339D5D00B2DCC8 /* Onboard */ = {
-			isa = PBXGroup;
-			children = (
-				E2E05A861F339D5D00B2DCC8 /* Source */,
-			);
-			name = Onboard;
-			path = ../../Onboard;
-			sourceTree = "<group>";
-		};
-		E2E05A861F339D5D00B2DCC8 /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				E2E05A871F339D5D00B2DCC8 /* OnboardingContentViewController.h */,
-				E2E05A881F339D5D00B2DCC8 /* OnboardingContentViewController.m */,
-				E2E05A891F339D5D00B2DCC8 /* OnboardingViewController.h */,
-				E2E05A8A1F339D5D00B2DCC8 /* OnboardingViewController.m */,
-			);
-			path = Source;
 			sourceTree = "<group>";
 		};
 		E2E05A9A1F33A2CA00B2DCC8 /* Common */ = {
@@ -660,10 +659,10 @@
 				E24460021F33926C00C9063E /* ViewController.swift in Sources */,
 				E244603B1F3393A100C9063E /* RecordVideoAdaptor.swift in Sources */,
 				E244602D1F3392CB00C9063E /* SwiftyCamViewControllerDelegate.swift in Sources */,
-				E2E05A8D1F339D5D00B2DCC8 /* OnboardingContentViewController.m in Sources */,
 				E24460001F33926C00C9063E /* AppDelegate.swift in Sources */,
 				E244602C1F3392CB00C9063E /* SwiftyCamViewController.swift in Sources */,
 				E244602E1F3392CB00C9063E /* SwiftyRecordButton.swift in Sources */,
+				668F12D61F342F4F001482EA /* OnboardingContentViewController.m in Sources */,
 				E24460301F3392D800C9063E /* RecordVideoViewController.swift in Sources */,
 				E24463751F3395BD00C9063E /* IntroViewAdapter.swift in Sources */,
 				E24463741F3395BD00C9063E /* IntroPresenter.swift in Sources */,
@@ -672,9 +671,9 @@
 				E24463801F3395BD00C9063E /* IntroWireframe.swift in Sources */,
 				E24460391F33937500C9063E /* RecordVideoPresenter.swift in Sources */,
 				E2E05AA21F33A2CA00B2DCC8 /* UIViewController.swift in Sources */,
+				668F12D71F342F4F001482EA /* OnboardingViewController.m in Sources */,
 				E2E05AA41F33A2CA00B2DCC8 /* NavigationController.swift in Sources */,
 				E244603D1F3393B100C9063E /* RecordVideoWireframe.swift in Sources */,
-				E2E05A8E1F339D5D00B2DCC8 /* OnboardingViewController.m in Sources */,
 				E2E05AA51F33A2CA00B2DCC8 /* Presenter.swift in Sources */,
 				E2E05AA61F33A2CA00B2DCC8 /* Wireframe.swift in Sources */,
 				E244602B1F3392CB00C9063E /* SwiftyCamButton.swift in Sources */,
