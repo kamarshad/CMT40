@@ -20,7 +20,6 @@
 		E244602D1F3392CB00C9063E /* SwiftyCamViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24460281F3392CB00C9063E /* SwiftyCamViewControllerDelegate.swift */; };
 		E244602E1F3392CB00C9063E /* SwiftyRecordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24460291F3392CB00C9063E /* SwiftyRecordButton.swift */; };
 		E24460301F3392D800C9063E /* RecordVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E244602F1F3392D800C9063E /* RecordVideoViewController.swift */; };
-		E24460351F3392E900C9063E /* RecordVideoStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E24460341F3392E900C9063E /* RecordVideoStoryboard.storyboard */; };
 		E24460371F33932500C9063E /* RecordVideoScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24460361F33932500C9063E /* RecordVideoScreenInteractor.swift */; };
 		E24460391F33937500C9063E /* RecordVideoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24460381F33937500C9063E /* RecordVideoPresenter.swift */; };
 		E244603B1F3393A100C9063E /* RecordVideoAdaptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E244603A1F3393A100C9063E /* RecordVideoAdaptor.swift */; };
@@ -29,6 +28,7 @@
 		E24463741F3395BD00C9063E /* IntroPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E244635E1F3395BD00C9063E /* IntroPresenter.swift */; };
 		E24463751F3395BD00C9063E /* IntroViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E244635F1F3395BD00C9063E /* IntroViewAdapter.swift */; };
 		E24463801F3395BD00C9063E /* IntroWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24463711F3395BD00C9063E /* IntroWireframe.swift */; };
+		E27A64F21F3420A1009752D0 /* RecordVideoStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E27A64F11F3420A1009752D0 /* RecordVideoStoryboard.storyboard */; };
 		E2E05A8D1F339D5D00B2DCC8 /* OnboardingContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E05A881F339D5D00B2DCC8 /* OnboardingContentViewController.m */; };
 		E2E05A8E1F339D5D00B2DCC8 /* OnboardingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E05A8A1F339D5D00B2DCC8 /* OnboardingViewController.m */; };
 		E2E05AA21F33A2CA00B2DCC8 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E05A9C1F33A2CA00B2DCC8 /* UIViewController.swift */; };
@@ -98,7 +98,6 @@
 		E24460281F3392CB00C9063E /* SwiftyCamViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyCamViewControllerDelegate.swift; sourceTree = "<group>"; };
 		E24460291F3392CB00C9063E /* SwiftyRecordButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyRecordButton.swift; sourceTree = "<group>"; };
 		E244602F1F3392D800C9063E /* RecordVideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordVideoViewController.swift; sourceTree = "<group>"; };
-		E24460331F3392E900C9063E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/RecordVideoStoryboard.storyboard; sourceTree = "<group>"; };
 		E24460361F33932500C9063E /* RecordVideoScreenInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordVideoScreenInteractor.swift; sourceTree = "<group>"; };
 		E24460381F33937500C9063E /* RecordVideoPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordVideoPresenter.swift; sourceTree = "<group>"; };
 		E244603A1F3393A100C9063E /* RecordVideoAdaptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordVideoAdaptor.swift; sourceTree = "<group>"; };
@@ -107,6 +106,7 @@
 		E244635E1F3395BD00C9063E /* IntroPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroPresenter.swift; sourceTree = "<group>"; };
 		E244635F1F3395BD00C9063E /* IntroViewAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewAdapter.swift; sourceTree = "<group>"; };
 		E24463711F3395BD00C9063E /* IntroWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroWireframe.swift; sourceTree = "<group>"; };
+		E27A64F11F3420A1009752D0 /* RecordVideoStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RecordVideoStoryboard.storyboard; sourceTree = "<group>"; };
 		E2E05A871F339D5D00B2DCC8 /* OnboardingContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OnboardingContentViewController.h; sourceTree = "<group>"; };
 		E2E05A881F339D5D00B2DCC8 /* OnboardingContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OnboardingContentViewController.m; sourceTree = "<group>"; };
 		E2E05A891F339D5D00B2DCC8 /* OnboardingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OnboardingViewController.h; sourceTree = "<group>"; };
@@ -257,8 +257,8 @@
 		E24460221F3392BF00C9063E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E27A64F11F3420A1009752D0 /* RecordVideoStoryboard.storyboard */,
 				E244602F1F3392D800C9063E /* RecordVideoViewController.swift */,
-				E24460341F3392E900C9063E /* RecordVideoStoryboard.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -529,6 +529,7 @@
 				E2E05AD31F33A71400B2DCC8 /* space1.png in Resources */,
 				E2E05AD71F33A71400B2DCC8 /* street.png in Resources */,
 				E2E05ACB1F33A71400B2DCC8 /* layers.png in Resources */,
+				E27A64F21F3420A1009752D0 /* RecordVideoStoryboard.storyboard in Resources */,
 				E2E05AD81F33A71400B2DCC8 /* sun.mp4 in Resources */,
 				E2E05ADA1F33A71400B2DCC8 /* tree.png in Resources */,
 				E2E05ACE1F33A71400B2DCC8 /* purple.png in Resources */,
@@ -541,7 +542,6 @@
 				E2E05AD11F33A71400B2DCC8 /* shark.png in Resources */,
 				E2E05AD01F33A71400B2DCC8 /* sf-outer-limits.upright.ttf in Resources */,
 				E2E05AD51F33A71400B2DCC8 /* space3.png in Resources */,
-				E24460351F3392E900C9063E /* RecordVideoStoryboard.storyboard in Resources */,
 				E2E05AD41F33A71400B2DCC8 /* space2.png in Resources */,
 				E2E05AD91F33A71400B2DCC8 /* testtube.png in Resources */,
 				E2E05AC71F33A71400B2DCC8 /* charcoal.png in Resources */,
@@ -709,15 +709,6 @@
 				E24460091F33926C00C9063E /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		E24460341F3392E900C9063E /* RecordVideoStoryboard.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E24460331F3392E900C9063E /* Base */,
-			);
-			name = RecordVideoStoryboard.storyboard;
-			path = ../../../../../VideoResume/VideoResume;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
