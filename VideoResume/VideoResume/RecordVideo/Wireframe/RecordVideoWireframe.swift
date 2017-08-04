@@ -14,13 +14,8 @@ protocol RecordVideoWireframe {
     func goToNextScreen()
 }
 
-class RecordVideoWireframeDelegate {
-    
-}
 
 class RecordVideoWireframeImpl: Wireframe, RecordVideoWireframe {
-    
-    fileprivate  var delegate:RecordVideoWireframeDelegate?
     
     static func push(_ navigationController: UINavigationController, animated:Bool) {
         let wireframe = RecordVideoWireframeImpl(navigationController: navigationController)
@@ -28,22 +23,17 @@ class RecordVideoWireframeImpl: Wireframe, RecordVideoWireframe {
         let screenInteractor = RecordVideoScreenInteractorImpl()
         let presenter = RecordVideoPresenter(wireframe: wireframe, screenInteractor: screenInteractor)
         view.presenter = presenter
-        
-        if navigationController.viewControllers.count>0 {
-            navigationController.pushViewController(view, animated: animated)
-        }
-        else {
-            navigationController.viewControllers = [view]
-        }
+        navigationController.pushViewController(view, animated: animated)
         navigationController.setNavigationBarHidden(true, animated: false)
     }
     
     func goBackToPreviousScreen() {
-        self.navigationController.popViewController(animated: true)
+        self.navigationController.popViewController(animated: false)
     }
     
     func goToNextScreen() {
-        //Inform next class to prepare data
+        //Call delegate methods
+        self.navigationController.popViewController(animated: true)
     }
 
 }

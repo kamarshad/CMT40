@@ -245,9 +245,10 @@ open class SwiftyCamViewController: UIViewController {
 
 	/// Disable view autorotation for forced portrait recorindg
     
-    
     var outputFileName:String!
-
+    
+    var outputFolderName:String!
+    
 	override open var shouldAutorotate: Bool {
 		return allowAutoRotate
 	}
@@ -504,7 +505,17 @@ open class SwiftyCamViewController: UIViewController {
                 if let notNilFileName = self.outputFileName {
                     outputFileName = notNilFileName
                 }
-				let outputFilePath = (NSTemporaryDirectory() as NSString).appendingPathComponent((outputFileName as NSString).appendingPathExtension("mov")!)
+                
+                var outputFolderName = "Videos"
+                if let notNillFolderName = self.outputFolderName {
+                    outputFolderName = notNillFolderName
+                }
+
+                let documentDirPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0]
+                var fileURL = URL(fileURLWithPath: documentDirPath)
+                fileURL = fileURL.appendingPathComponent(outputFolderName)
+                let outputFilePath = fileURL.appendingPathComponent(outputFileName+"mov").absoluteString
+                
 				movieFileOutput.startRecording(toOutputFileURL: URL(fileURLWithPath: outputFilePath), recordingDelegate: self)
 				self.isVideoRecording = true
 				DispatchQueue.main.async {
@@ -517,14 +528,16 @@ open class SwiftyCamViewController: UIViewController {
 		}
 	}
 
+    fileprivate func videoSaveDirectoryURL(fileName: String) -> String {
+        let documentDirPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0]
+        let fileURL = URL(fileURLWithPath: documentDirPath)
+        return fileURL.appendingPathComponent(fileName).absoluteString
+    }
+
 	/**
-
 	Stop video recording video of current session
-
 	SwiftyCamViewControllerDelegate function SwiftyCamDidFinishRecordingVideo() will be called
-
 	When video has finished processing, the URL to the video location will be returned by SwiftyCamDidFinishProcessingVideoAt(url:)
-
 	*/
 
 	public func stopVideoRecording() {
