@@ -39,6 +39,7 @@
 		E24463751F3395BD00C9063E /* IntroViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E244635F1F3395BD00C9063E /* IntroViewAdapter.swift */; };
 		E24463801F3395BD00C9063E /* IntroWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24463711F3395BD00C9063E /* IntroWireframe.swift */; };
 		E27A64F21F3420A1009752D0 /* RecordVideoStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E27A64F11F3420A1009752D0 /* RecordVideoStoryboard.storyboard */; };
+		E27A64F51F346C27009752D0 /* PlayVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27A64F41F346C27009752D0 /* PlayVideoViewController.swift */; };
 		E2E05AA21F33A2CA00B2DCC8 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E05A9C1F33A2CA00B2DCC8 /* UIViewController.swift */; };
 		E2E05AA31F33A2CA00B2DCC8 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E05A9E1F33A2CA00B2DCC8 /* Constant.swift */; };
 		E2E05AA41F33A2CA00B2DCC8 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E05A9F1F33A2CA00B2DCC8 /* NavigationController.swift */; };
@@ -127,6 +128,7 @@
 		E244635F1F3395BD00C9063E /* IntroViewAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewAdapter.swift; sourceTree = "<group>"; };
 		E24463711F3395BD00C9063E /* IntroWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroWireframe.swift; sourceTree = "<group>"; };
 		E27A64F11F3420A1009752D0 /* RecordVideoStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RecordVideoStoryboard.storyboard; sourceTree = "<group>"; };
+		E27A64F41F346C27009752D0 /* PlayVideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayVideoViewController.swift; sourceTree = "<group>"; };
 		E2E05A951F339E0500B2DCC8 /* VideoResume-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VideoResume-Bridging-Header.h"; sourceTree = "<group>"; };
 		E2E05A9C1F33A2CA00B2DCC8 /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		E2E05A9E1F33A2CA00B2DCC8 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
@@ -262,6 +264,7 @@
 				E244601F1F3392BF00C9063E /* RecordVideo */,
 				E2445FFF1F33926C00C9063E /* AppDelegate.swift */,
 				E24460011F33926C00C9063E /* ViewController.swift */,
+				E27A64F41F346C27009752D0 /* PlayVideoViewController.swift */,
 				E24460061F33926C00C9063E /* Assets.xcassets */,
 				E24460081F33926C00C9063E /* LaunchScreen.storyboard */,
 				E244600B1F33926C00C9063E /* Info.plist */,
@@ -713,6 +716,7 @@
 				668F12D71F342F4F001482EA /* OnboardingViewController.m in Sources */,
 				E2E05AA41F33A2CA00B2DCC8 /* NavigationController.swift in Sources */,
 				E244603D1F3393B100C9063E /* RecordVideoWireframe.swift in Sources */,
+				E27A64F51F346C27009752D0 /* PlayVideoViewController.swift in Sources */,
 				668F12DB1F344460001482EA /* QuestionaireViewController.swift in Sources */,
 				E2E05AA51F33A2CA00B2DCC8 /* Presenter.swift in Sources */,
 				E2E05AA61F33A2CA00B2DCC8 /* Wireframe.swift in Sources */,
