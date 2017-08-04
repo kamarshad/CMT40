@@ -78,8 +78,8 @@ class RecordVideoViewController : SwiftyCamViewController {
 
     fileprivate func showVideoRecoredAlert() {
         
-        let title = NSLocalizedString("Alert", comment: "")
-        let message = NSLocalizedString("That was the fantastic video if you are not satisfied", comment: "")
+        let title = NSLocalizedString("", comment: "")
+        let message = NSLocalizedString("That was a fantastic video if you are not satisfied", comment: "")
         let recordAgainActionTitle = NSLocalizedString("Record Again", comment: "")
         let nextActionTitle = NSLocalizedString("Next", comment: "")
 

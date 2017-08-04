@@ -34,7 +34,7 @@ class RecordVideoWireframeImpl: Wireframe, RecordVideoWireframe {
     }
     
     func goBackToPreviousScreen() {
-        self.navigationController.popViewController(animated: false)
+        self.navigationController.popViewController(animated: true)
     }
     
     func goToNextScreen() {
