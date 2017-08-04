@@ -482,7 +482,7 @@
 					E2445FFB1F33926C00C9063E = {
 						CreatedOnToolsVersion = 8.3;
 						DevelopmentTeam = D5NWSMACX3;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					E244600F1F33926C00C9063E = {
 						CreatedOnToolsVersion = 8.3;
@@ -735,7 +735,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Mohd Kamar Shad (C7RQ88M6UK)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -786,7 +786,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Mohd Kamar Shad (C7RQ88M6UK)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -813,11 +813,14 @@
 			baseConfigurationReference = 43930069A8EF3CD83436C3D2 /* Pods-VideoResume.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Mohd Kamar Shad (C7RQ88M6UK)";
 				DEVELOPMENT_TEAM = D5NWSMACX3;
 				INFOPLIST_FILE = VideoResume/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = bold.com.VideoResume;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bold.JobQuest-MPR-EP";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "f885566d-23b2-474a-b49b-d32e8d79c388";
+				PROVISIONING_PROFILE_SPECIFIER = "MPR Jobs Development";
 				SWIFT_OBJC_BRIDGING_HEADER = "VideoResume/VideoResume-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
@@ -828,11 +831,13 @@
 			baseConfigurationReference = 3F62437FFD4E8553016830A8 /* Pods-VideoResume.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Mohd Kamar Shad (C7RQ88M6UK)";
 				DEVELOPMENT_TEAM = D5NWSMACX3;
 				INFOPLIST_FILE = VideoResume/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = bold.com.VideoResume;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bold.JobQuest-MPR-EP";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "MPR Jobs Development";
 				SWIFT_OBJC_BRIDGING_HEADER = "VideoResume/VideoResume-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};

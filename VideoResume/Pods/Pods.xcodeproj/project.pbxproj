@@ -7,19 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		018E7747790439C735D15A94FE4FF029 /* MZTimerLabel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BE4293BEE661CA22B19594A101374A3A /* MZTimerLabel-dummy.m */; };
+		04EAB9232B47418384955D4D9F65AF89 /* MZTimerLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = E4EF8213C71187D9EBADEA193F618D1F /* MZTimerLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		101F048ECB8C4BC7A4854761BC8B98E4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		21EDDDB10455790634B336BC49E6F0C0 /* MZTimerLabel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D826001EFE4597CB5D4439312DBC8250 /* MZTimerLabel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		41598596231C2B170862266A3CBF5BC9 /* Pods-VideoResume-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AD50758E8FF1C7C491A79F294DA44AE2 /* Pods-VideoResume-dummy.m */; };
 		50E49A4816EC37EEAE7A31D2F9E60D72 /* Pods-VideoResumeTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5F906416ECAE612CFF75B959FF44B8 /* Pods-VideoResumeTests-dummy.m */; };
 		61EA407ED78D7B6ACE9FA6EF182F7F70 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		6757C66CBE814A06E536297ED3CAF088 /* Pods-VideoResume-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D3803160C558B9539522EC5279CC22FF /* Pods-VideoResume-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		701DD1FC079E515D6A8F890342DA5BAE /* Pods-VideoResumeTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ED5C04B9D42CB0D20468369B910167B /* Pods-VideoResumeTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CB54E8BC883F40798B4EE785AD1FC41D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		D11A4441C1EDA006A154B866913F135E /* Pods-VideoResume-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AD50758E8FF1C7C491A79F294DA44AE2 /* Pods-VideoResume-dummy.m */; };
+		78588C2E0F75CA10F733277F64303045 /* MZTimerLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B0149850998B501EFBD6CE5989BAD9 /* MZTimerLabel.m */; };
+		98EDBB696C205D2FECCC385AAD09F7FD /* Pods-VideoResume-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D3803160C558B9539522EC5279CC22FF /* Pods-VideoResume-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D867FAF3298BB7B32C288D22B6262F8B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		935512974DDC9F9412AD911457050751 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A2E50C24B03143F1418B06D739A8001;
+			remoteInfo = MZTimerLabel;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		03C236FF0F1D4E4D3E7271A1B9B59C66 /* Pods-VideoResumeTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VideoResumeTests-frameworks.sh"; sourceTree = "<group>"; };
 		07BB161E87ABD0B94DCBBF32C09C0EAA /* Pods-VideoResumeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VideoResumeTests.debug.xcconfig"; sourceTree = "<group>"; };
-		09E2774A33F6930AFF790CFE35B455DD /* Pods_VideoResume.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_VideoResume.framework; path = "Pods-VideoResume.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		128B95BFD36CB3606AADC22D890B98A7 /* Pods_VideoResumeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_VideoResumeTests.framework; path = "Pods-VideoResumeTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		08B0149850998B501EFBD6CE5989BAD9 /* MZTimerLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MZTimerLabel.m; path = MZTimerLabel/MZTimerLabel.m; sourceTree = "<group>"; };
+		0A623FC599190A3E284E6AC114594C88 /* MZTimerLabel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MZTimerLabel-prefix.pch"; sourceTree = "<group>"; };
 		14D9293354D3361CBF95AC46EA22403E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E29A0B47712D1F42D2D147D595D52C5 /* Pods-VideoResume-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VideoResume-resources.sh"; sourceTree = "<group>"; };
 		4DE4A2578386C73436E47633FEABB2C8 /* Pods-VideoResumeTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VideoResumeTests-resources.sh"; sourceTree = "<group>"; };
@@ -28,17 +43,26 @@
 		67EB1BC540B5D0594F8764FBC0517D57 /* Pods-VideoResumeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VideoResumeTests.release.xcconfig"; sourceTree = "<group>"; };
 		69FF67B6E74803998C4C4AD920AA95E7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6F57B75B730726E5A0C192F14FAB605A /* Pods-VideoResume-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VideoResume-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7F3D0B36F75326BB699062985126B79E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		818655A520FE0C706C2830A372EE7B05 /* Pods-VideoResumeTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VideoResumeTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8BB672431F7A2B9A038D0D373570D1FE /* Pods_VideoResume.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_VideoResume.framework; path = "Pods-VideoResume.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		92CB22A1A7C812E9858C3B62D6808A0D /* Pods-VideoResume-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VideoResume-acknowledgements.plist"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9A9DE47BFBB3D1D2461553ECE4CDD25B /* Pods-VideoResume.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-VideoResume.modulemap"; sourceTree = "<group>"; };
 		9ED5C04B9D42CB0D20468369B910167B /* Pods-VideoResumeTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VideoResumeTests-umbrella.h"; sourceTree = "<group>"; };
 		A0FA3CE277E762EB884AC2DB5F11FDE7 /* Pods-VideoResumeTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VideoResumeTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		AD50758E8FF1C7C491A79F294DA44AE2 /* Pods-VideoResume-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VideoResume-dummy.m"; sourceTree = "<group>"; };
+		BE4293BEE661CA22B19594A101374A3A /* MZTimerLabel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MZTimerLabel-dummy.m"; sourceTree = "<group>"; };
 		C6F830B0C99FB33F71837E8A004D00D9 /* Pods-VideoResume.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VideoResume.release.xcconfig"; sourceTree = "<group>"; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		CE75E78EE22C61E8DF574FFD1F41578D /* Pods-VideoResume-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VideoResume-frameworks.sh"; sourceTree = "<group>"; };
 		D3803160C558B9539522EC5279CC22FF /* Pods-VideoResume-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VideoResume-umbrella.h"; sourceTree = "<group>"; };
+		D826001EFE4597CB5D4439312DBC8250 /* MZTimerLabel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MZTimerLabel-umbrella.h"; sourceTree = "<group>"; };
+		DAEC8167CB4505FFE223EE217B083ABA /* Pods_VideoResumeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_VideoResumeTests.framework; path = "Pods-VideoResumeTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4EF8213C71187D9EBADEA193F618D1F /* MZTimerLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MZTimerLabel.h; path = MZTimerLabel/MZTimerLabel.h; sourceTree = "<group>"; };
+		F685F34A0C40C5B282C33E1A1589B8E8 /* MZTimerLabel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = MZTimerLabel.modulemap; sourceTree = "<group>"; };
+		F7AF33C4E5C12686FA3D012BD4EECE18 /* MZTimerLabel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MZTimerLabel.xcconfig; sourceTree = "<group>"; };
+		FAF19CDFC0230AA6CB0E82F54DFB40E2 /* MZTimerLabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MZTimerLabel.framework; path = MZTimerLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF5F906416ECAE612CFF75B959FF44B8 /* Pods-VideoResumeTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VideoResumeTests-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -51,17 +75,54 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E91B66C8FEA51C178F5321530330CDAA /* Frameworks */ = {
+		5DB18A5342C67A8AEF673AE4EF56BA4E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB54E8BC883F40798B4EE785AD1FC41D /* Foundation.framework in Frameworks */,
+				D867FAF3298BB7B32C288D22B6262F8B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4F69D2DE17537066DABE35C057999F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				101F048ECB8C4BC7A4854761BC8B98E4 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1CAB68A34C59DCBD3762B0D4DC59DF09 /* MZTimerLabel */ = {
+			isa = PBXGroup;
+			children = (
+				E4EF8213C71187D9EBADEA193F618D1F /* MZTimerLabel.h */,
+				08B0149850998B501EFBD6CE5989BAD9 /* MZTimerLabel.m */,
+				8A587D772F757609FB729307AD3328FF /* Support Files */,
+			);
+			name = MZTimerLabel;
+			path = MZTimerLabel;
+			sourceTree = "<group>";
+		};
+		1CEFAB5250A07B0E06D1F15035E5A78D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAF19CDFC0230AA6CB0E82F54DFB40E2 /* MZTimerLabel.framework */,
+				8BB672431F7A2B9A038D0D373570D1FE /* Pods_VideoResume.framework */,
+				DAEC8167CB4505FFE223EE217B083ABA /* Pods_VideoResumeTests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		65C47C1279A4B92BE6550361481A8554 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1CAB68A34C59DCBD3762B0D4DC59DF09 /* MZTimerLabel */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -75,7 +136,8 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				E3D7083E42DC57E2E14A04819FD779A7 /* Products */,
+				65C47C1279A4B92BE6550361481A8554 /* Pods */,
+				1CEFAB5250A07B0E06D1F15035E5A78D /* Products */,
 				903CBD289EE66A5451D22487963E604B /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -96,6 +158,20 @@
 			);
 			name = "Pods-VideoResume";
 			path = "Target Support Files/Pods-VideoResume";
+			sourceTree = "<group>";
+		};
+		8A587D772F757609FB729307AD3328FF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7F3D0B36F75326BB699062985126B79E /* Info.plist */,
+				F685F34A0C40C5B282C33E1A1589B8E8 /* MZTimerLabel.modulemap */,
+				F7AF33C4E5C12686FA3D012BD4EECE18 /* MZTimerLabel.xcconfig */,
+				BE4293BEE661CA22B19594A101374A3A /* MZTimerLabel-dummy.m */,
+				0A623FC599190A3E284E6AC114594C88 /* MZTimerLabel-prefix.pch */,
+				D826001EFE4597CB5D4439312DBC8250 /* MZTimerLabel-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MZTimerLabel";
 			sourceTree = "<group>";
 		};
 		903CBD289EE66A5451D22487963E604B /* Targets Support Files */ = {
@@ -133,15 +209,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E3D7083E42DC57E2E14A04819FD779A7 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				09E2774A33F6930AFF790CFE35B455DD /* Pods_VideoResume.framework */,
-				128B95BFD36CB3606AADC22D890B98A7 /* Pods_VideoResumeTests.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -153,32 +220,59 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B1885EF00349BF6E6CAB036C299B16C0 /* Headers */ = {
+		E5E7297F0F7F8F93806EA3354E3449A1 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6757C66CBE814A06E536297ED3CAF088 /* Pods-VideoResume-umbrella.h in Headers */,
+				98EDBB696C205D2FECCC385AAD09F7FD /* Pods-VideoResume-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD3D6962FC1180526EF8288CB27E19D1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21EDDDB10455790634B336BC49E6F0C0 /* MZTimerLabel-umbrella.h in Headers */,
+				04EAB9232B47418384955D4D9F65AF89 /* MZTimerLabel.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		32B043E8A6CB894A9AA02E703A4190C1 /* Pods-VideoResume */ = {
+		0A2E50C24B03143F1418B06D739A8001 /* MZTimerLabel */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 80D1BEFBBD28797D6DC7915B62C786A9 /* Build configuration list for PBXNativeTarget "Pods-VideoResume" */;
+			buildConfigurationList = 141C7A327508D59D25B8C4CF1F8AED38 /* Build configuration list for PBXNativeTarget "MZTimerLabel" */;
 			buildPhases = (
-				A9A5BCC8650142075280686C79611B97 /* Sources */,
-				E91B66C8FEA51C178F5321530330CDAA /* Frameworks */,
-				B1885EF00349BF6E6CAB036C299B16C0 /* Headers */,
+				C6FBF4D2A930E4BE141C519E00F5DFF7 /* Sources */,
+				5DB18A5342C67A8AEF673AE4EF56BA4E /* Frameworks */,
+				FD3D6962FC1180526EF8288CB27E19D1 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
+			name = MZTimerLabel;
+			productName = MZTimerLabel;
+			productReference = FAF19CDFC0230AA6CB0E82F54DFB40E2 /* MZTimerLabel.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		39589F831A6E3D70A13871EFDFDC2638 /* Pods-VideoResume */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C449A74C797B240EE702E76E7AB1AEA5 /* Build configuration list for PBXNativeTarget "Pods-VideoResume" */;
+			buildPhases = (
+				2CA566A02752B9EF38279873FE0EF65E /* Sources */,
+				A4F69D2DE17537066DABE35C057999F8 /* Frameworks */,
+				E5E7297F0F7F8F93806EA3354E3449A1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				20FD7444156FAF241156C3A6B190B1D5 /* PBXTargetDependency */,
+			);
 			name = "Pods-VideoResume";
 			productName = "Pods-VideoResume";
-			productReference = 09E2774A33F6930AFF790CFE35B455DD /* Pods_VideoResume.framework */;
+			productReference = 8BB672431F7A2B9A038D0D373570D1FE /* Pods_VideoResume.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		A9C8D7C0BB7263A7B6A86CE4ADF6A825 /* Pods-VideoResumeTests */ = {
@@ -195,7 +289,7 @@
 			);
 			name = "Pods-VideoResumeTests";
 			productName = "Pods-VideoResumeTests";
-			productReference = 128B95BFD36CB3606AADC22D890B98A7 /* Pods_VideoResumeTests.framework */;
+			productReference = DAEC8167CB4505FFE223EE217B083ABA /* Pods_VideoResumeTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -215,11 +309,12 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = E3D7083E42DC57E2E14A04819FD779A7 /* Products */;
+			productRefGroup = 1CEFAB5250A07B0E06D1F15035E5A78D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				32B043E8A6CB894A9AA02E703A4190C1 /* Pods-VideoResume */,
+				0A2E50C24B03143F1418B06D739A8001 /* MZTimerLabel */,
+				39589F831A6E3D70A13871EFDFDC2638 /* Pods-VideoResume */,
 				A9C8D7C0BB7263A7B6A86CE4ADF6A825 /* Pods-VideoResumeTests */,
 			);
 		};
@@ -234,15 +329,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A9A5BCC8650142075280686C79611B97 /* Sources */ = {
+		2CA566A02752B9EF38279873FE0EF65E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D11A4441C1EDA006A154B866913F135E /* Pods-VideoResume-dummy.m in Sources */,
+				41598596231C2B170862266A3CBF5BC9 /* Pods-VideoResume-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6FBF4D2A930E4BE141C519E00F5DFF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				018E7747790439C735D15A94FE4FF029 /* MZTimerLabel-dummy.m in Sources */,
+				78588C2E0F75CA10F733277F64303045 /* MZTimerLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		20FD7444156FAF241156C3A6B190B1D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MZTimerLabel;
+			target = 0A2E50C24B03143F1418B06D739A8001 /* MZTimerLabel */;
+			targetProxy = 935512974DDC9F9412AD911457050751 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		156284431C64CB05C59BDA0595A1E95A /* Release */ = {
@@ -320,7 +433,39 @@
 			};
 			name = Release;
 		};
-		3ACDA641061860735148EA5A57756E9A /* Release */ = {
+		322FA5028FCB101628514702EC67AE1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7AF33C4E5C12686FA3D012BD4EECE18 /* MZTimerLabel.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MZTimerLabel/MZTimerLabel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MZTimerLabel/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MZTimerLabel/MZTimerLabel.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = MZTimerLabel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		607957B7AC9FBFD78957F7C2BB4B33C4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C6F830B0C99FB33F71837E8A004D00D9 /* Pods-VideoResume.release.xcconfig */;
 			buildSettings = {
@@ -355,41 +500,6 @@
 			};
 			name = Release;
 		};
-		4B5066DD0B5AB2E0742E640CB41AEA7E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6353C2121D6F8BA07EB57F2614010D7A /* Pods-VideoResume.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-VideoResume/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-VideoResume/Pods-VideoResume.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_VideoResume;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		7DE9B927DA4D704465A298FE2720D40C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 07BB161E87ABD0B94DCBBF32C09C0EAA /* Pods-VideoResumeTests.debug.xcconfig */;
@@ -419,6 +529,38 @@
 				PRODUCT_NAME = Pods_VideoResumeTests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C0C514BF3DB7F16635295C32B682884F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7AF33C4E5C12686FA3D012BD4EECE18 /* MZTimerLabel.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MZTimerLabel/MZTimerLabel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MZTimerLabel/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MZTimerLabel/MZTimerLabel.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = MZTimerLabel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -469,9 +611,53 @@
 			};
 			name = Debug;
 		};
+		F724C821E660BF50AAE6161FF6081631 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6353C2121D6F8BA07EB57F2614010D7A /* Pods-VideoResume.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-VideoResume/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-VideoResume/Pods-VideoResume.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_VideoResume;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		141C7A327508D59D25B8C4CF1F8AED38 /* Build configuration list for PBXNativeTarget "MZTimerLabel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0C514BF3DB7F16635295C32B682884F /* Debug */,
+				322FA5028FCB101628514702EC67AE1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -481,20 +667,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		80D1BEFBBD28797D6DC7915B62C786A9 /* Build configuration list for PBXNativeTarget "Pods-VideoResume" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4B5066DD0B5AB2E0742E640CB41AEA7E /* Debug */,
-				3ACDA641061860735148EA5A57756E9A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		929DBB251E8548E01142BF367A9613CD /* Build configuration list for PBXNativeTarget "Pods-VideoResumeTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7DE9B927DA4D704465A298FE2720D40C /* Debug */,
 				1EFE4CE0990E1CFCFCB77057C5B9F34F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C449A74C797B240EE702E76E7AB1AEA5 /* Build configuration list for PBXNativeTarget "Pods-VideoResume" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F724C821E660BF50AAE6161FF6081631 /* Debug */,
+				607957B7AC9FBFD78957F7C2BB4B33C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
