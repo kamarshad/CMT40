@@ -13,9 +13,14 @@ protocol RecordVideoWireframe {
     func goBackToPreviousScreen()
 }
 
+protocol VideoRecordDelegate {
+    
+    func videoRecordedSuccessfully(recordedSuccessfully: Bool)
+}
+
 class RecordVideoWireframeImpl: RecordVideoWireframe {
     
-    static func push(_ navigationController: UINavigationController, animated:Bool) {
+    static func push(_ navigationController: UINavigationController, animated:Bool, fileNameForVideo: String, delegate: VideoRecordDelegate? = nil) {
         let wireframe = RecordVideoWireframeImpl()
         let view = RecordVideoViewController.instantiateFromStoryboard()
         let screenInteractor = RecordVideoScreenInteractorImpl()

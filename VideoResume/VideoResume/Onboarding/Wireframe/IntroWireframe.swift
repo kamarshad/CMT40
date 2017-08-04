@@ -31,7 +31,8 @@ class IntroWireframeImpl: Wireframe, IntroWireframe {
     }
     
     func pushToNextController () {
-        RecordVideoWireframeImpl.push(navigationController, animated: true)
+        let questionaireVC = QuestionaireViewController.init(nibName: "QuestionaireViewController", bundle: nil)
+        self.navigationController.pushViewController(questionaireVC, animated: true)
     }
 
 }
