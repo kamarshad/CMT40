@@ -130,7 +130,7 @@ NSString * const kOnboardActionButtonAccessibilityIdentifier = @"OnboardActionBu
     self.videoURL = videoURL;
 
     // Auto-navigation
-    self.movesToNextViewController = NO;
+    self.movesToNextViewController = YES;
     
     // Default padding values
     self.topPadding = kDefaultTopPadding;
