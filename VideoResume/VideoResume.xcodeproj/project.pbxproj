@@ -829,7 +829,7 @@
 			baseConfigurationReference = 43930069A8EF3CD83436C3D2 /* Pods-VideoResume.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Mohd Kamar Shad (C7RQ88M6UK)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Nikhil Lihla (9W768ZYU9K)";
 				DEVELOPMENT_TEAM = D5NWSMACX3;
 				INFOPLIST_FILE = VideoResume/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -847,7 +847,7 @@
 			baseConfigurationReference = 3F62437FFD4E8553016830A8 /* Pods-VideoResume.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Mohd Kamar Shad (C7RQ88M6UK)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Nikhil Lihla (9W768ZYU9K)";
 				DEVELOPMENT_TEAM = D5NWSMACX3;
 				INFOPLIST_FILE = VideoResume/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

@@ -506,7 +506,7 @@ open class SwiftyCamViewController: UIViewController {
                     outputFileName = notNilFileName
                 }
                 
-                var outputFolderName = "Videos"
+                var outputFolderName = UserDefaultConstants.videoFolderName.string()
                 if let notNillFolderName = self.outputFolderName {
                     outputFolderName = notNillFolderName
                 }

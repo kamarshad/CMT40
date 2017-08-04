@@ -19,12 +19,14 @@ protocol VideoRecordDelegate {
     func videoRecordedSuccessfully(recordedSuccessfully: Bool)
 }
 
-class RecordVideoWireframeImpl: RecordVideoWireframe {
+class RecordVideoWireframeImpl: Wireframe, RecordVideoWireframe {
+    fileprivate var delegate:VideoRecordDelegate?
     
     static func push(_ navigationController: UINavigationController, animated:Bool, fileNameForVideo: String, delegate: VideoRecordDelegate? = nil) {
-        let wireframe = RecordVideoWireframeImpl()
+        let wireframe = RecordVideoWireframeImpl(navigationController: navigationController)
+        wireframe.delegate = delegate
         let view = RecordVideoViewController.instantiateFromStoryboard()
-        let screenInteractor = RecordVideoScreenInteractorImpl()
+        let screenInteractor = RecordVideoScreenInteractorImpl(name: fileNameForVideo)
         let presenter = RecordVideoPresenter(wireframe: wireframe, screenInteractor: screenInteractor)
         view.presenter = presenter
         navigationController.pushViewController(view, animated: animated)
@@ -37,6 +39,7 @@ class RecordVideoWireframeImpl: RecordVideoWireframe {
     
     func goToNextScreen() {
         //Call delegate methods
+        self.delegate?.videoRecordedSuccessfully(recordedSuccessfully: true)
         self.navigationController.popViewController(animated: true)
     }
 
