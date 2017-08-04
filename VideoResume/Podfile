@@ -6,6 +6,7 @@ target 'VideoResume' do
   use_frameworks!
 
   # Pods for VideoResume
+pod 'MZTimerLabel'
   target 'VideoResumeTests' do
     inherit! :search_paths
     # Pods for testing

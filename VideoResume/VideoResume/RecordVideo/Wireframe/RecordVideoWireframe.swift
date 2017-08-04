@@ -11,6 +11,7 @@ import UIKit
 protocol RecordVideoWireframe {
 
     func goBackToPreviousScreen()
+    func goToNextScreen()
 }
 
 protocol VideoRecordDelegate {
@@ -26,18 +27,17 @@ class RecordVideoWireframeImpl: RecordVideoWireframe {
         let screenInteractor = RecordVideoScreenInteractorImpl()
         let presenter = RecordVideoPresenter(wireframe: wireframe, screenInteractor: screenInteractor)
         view.presenter = presenter
-        
-        if navigationController.viewControllers.count>0 {
-            navigationController.pushViewController(view, animated: animated)
-        }
-        else {
-            navigationController.viewControllers = [view]
-        }
+        navigationController.pushViewController(view, animated: animated)
         navigationController.setNavigationBarHidden(true, animated: false)
     }
     
     func goBackToPreviousScreen() {
-    
+        self.navigationController.popViewController(animated: false)
     }
     
+    func goToNextScreen() {
+        //Call delegate methods
+        self.navigationController.popViewController(animated: true)
+    }
+
 }
