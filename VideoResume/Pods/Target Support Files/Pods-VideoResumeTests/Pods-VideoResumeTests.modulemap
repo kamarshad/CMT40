@@ -1,0 +1,6 @@
+framework module Pods_VideoResumeTests {
+  umbrella header "Pods-VideoResumeTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

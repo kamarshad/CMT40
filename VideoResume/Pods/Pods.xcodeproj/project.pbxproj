@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		50E49A4816EC37EEAE7A31D2F9E60D72 /* Pods-VideoResumeTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5F906416ECAE612CFF75B959FF44B8 /* Pods-VideoResumeTests-dummy.m */; };
+		61EA407ED78D7B6ACE9FA6EF182F7F70 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		6757C66CBE814A06E536297ED3CAF088 /* Pods-VideoResume-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D3803160C558B9539522EC5279CC22FF /* Pods-VideoResume-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		701DD1FC079E515D6A8F890342DA5BAE /* Pods-VideoResumeTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ED5C04B9D42CB0D20468369B910167B /* Pods-VideoResumeTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB54E8BC883F40798B4EE785AD1FC41D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		D11A4441C1EDA006A154B866913F135E /* Pods-VideoResume-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AD50758E8FF1C7C491A79F294DA44AE2 /* Pods-VideoResume-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		03C236FF0F1D4E4D3E7271A1B9B59C66 /* Pods-VideoResumeTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VideoResumeTests-frameworks.sh"; sourceTree = "<group>"; };
+		07BB161E87ABD0B94DCBBF32C09C0EAA /* Pods-VideoResumeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VideoResumeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		09E2774A33F6930AFF790CFE35B455DD /* Pods_VideoResume.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_VideoResume.framework; path = "Pods-VideoResume.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		128B95BFD36CB3606AADC22D890B98A7 /* Pods_VideoResumeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_VideoResumeTests.framework; path = "Pods-VideoResumeTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		14D9293354D3361CBF95AC46EA22403E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E29A0B47712D1F42D2D147D595D52C5 /* Pods-VideoResume-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VideoResume-resources.sh"; sourceTree = "<group>"; };
+		4DE4A2578386C73436E47633FEABB2C8 /* Pods-VideoResumeTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VideoResumeTests-resources.sh"; sourceTree = "<group>"; };
+		534C8EE31E2E997080DB9A4966339399 /* Pods-VideoResumeTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-VideoResumeTests.modulemap"; sourceTree = "<group>"; };
+		6353C2121D6F8BA07EB57F2614010D7A /* Pods-VideoResume.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VideoResume.debug.xcconfig"; sourceTree = "<group>"; };
+		67EB1BC540B5D0594F8764FBC0517D57 /* Pods-VideoResumeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VideoResumeTests.release.xcconfig"; sourceTree = "<group>"; };
+		69FF67B6E74803998C4C4AD920AA95E7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F57B75B730726E5A0C192F14FAB605A /* Pods-VideoResume-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VideoResume-acknowledgements.markdown"; sourceTree = "<group>"; };
+		818655A520FE0C706C2830A372EE7B05 /* Pods-VideoResumeTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VideoResumeTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		92CB22A1A7C812E9858C3B62D6808A0D /* Pods-VideoResume-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VideoResume-acknowledgements.plist"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9A9DE47BFBB3D1D2461553ECE4CDD25B /* Pods-VideoResume.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-VideoResume.modulemap"; sourceTree = "<group>"; };
+		9ED5C04B9D42CB0D20468369B910167B /* Pods-VideoResumeTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VideoResumeTests-umbrella.h"; sourceTree = "<group>"; };
+		A0FA3CE277E762EB884AC2DB5F11FDE7 /* Pods-VideoResumeTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VideoResumeTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		AD50758E8FF1C7C491A79F294DA44AE2 /* Pods-VideoResume-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VideoResume-dummy.m"; sourceTree = "<group>"; };
+		C6F830B0C99FB33F71837E8A004D00D9 /* Pods-VideoResume.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VideoResume.release.xcconfig"; sourceTree = "<group>"; };
+		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CE75E78EE22C61E8DF574FFD1F41578D /* Pods-VideoResume-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VideoResume-frameworks.sh"; sourceTree = "<group>"; };
+		D3803160C558B9539522EC5279CC22FF /* Pods-VideoResume-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VideoResume-umbrella.h"; sourceTree = "<group>"; };
+		FF5F906416ECAE612CFF75B959FF44B8 /* Pods-VideoResumeTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VideoResumeTests-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		538FD662A93B7918D3433A3D1C691D49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61EA407ED78D7B6ACE9FA6EF182F7F70 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E91B66C8FEA51C178F5321530330CDAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB54E8BC883F40798B4EE785AD1FC41D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				E3D7083E42DC57E2E14A04819FD779A7 /* Products */,
+				903CBD289EE66A5451D22487963E604B /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		81AAEDF0452F9D5E4BC5100FE3BC4625 /* Pods-VideoResume */ = {
+			isa = PBXGroup;
+			children = (
+				69FF67B6E74803998C4C4AD920AA95E7 /* Info.plist */,
+				9A9DE47BFBB3D1D2461553ECE4CDD25B /* Pods-VideoResume.modulemap */,
+				6F57B75B730726E5A0C192F14FAB605A /* Pods-VideoResume-acknowledgements.markdown */,
+				92CB22A1A7C812E9858C3B62D6808A0D /* Pods-VideoResume-acknowledgements.plist */,
+				AD50758E8FF1C7C491A79F294DA44AE2 /* Pods-VideoResume-dummy.m */,
+				CE75E78EE22C61E8DF574FFD1F41578D /* Pods-VideoResume-frameworks.sh */,
+				2E29A0B47712D1F42D2D147D595D52C5 /* Pods-VideoResume-resources.sh */,
+				D3803160C558B9539522EC5279CC22FF /* Pods-VideoResume-umbrella.h */,
+				6353C2121D6F8BA07EB57F2614010D7A /* Pods-VideoResume.debug.xcconfig */,
+				C6F830B0C99FB33F71837E8A004D00D9 /* Pods-VideoResume.release.xcconfig */,
+			);
+			name = "Pods-VideoResume";
+			path = "Target Support Files/Pods-VideoResume";
+			sourceTree = "<group>";
+		};
+		903CBD289EE66A5451D22487963E604B /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				81AAEDF0452F9D5E4BC5100FE3BC4625 /* Pods-VideoResume */,
+				ADF840E947886D5281499B1362142313 /* Pods-VideoResumeTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		ADF840E947886D5281499B1362142313 /* Pods-VideoResumeTests */ = {
+			isa = PBXGroup;
+			children = (
+				14D9293354D3361CBF95AC46EA22403E /* Info.plist */,
+				534C8EE31E2E997080DB9A4966339399 /* Pods-VideoResumeTests.modulemap */,
+				818655A520FE0C706C2830A372EE7B05 /* Pods-VideoResumeTests-acknowledgements.markdown */,
+				A0FA3CE277E762EB884AC2DB5F11FDE7 /* Pods-VideoResumeTests-acknowledgements.plist */,
+				FF5F906416ECAE612CFF75B959FF44B8 /* Pods-VideoResumeTests-dummy.m */,
+				03C236FF0F1D4E4D3E7271A1B9B59C66 /* Pods-VideoResumeTests-frameworks.sh */,
+				4DE4A2578386C73436E47633FEABB2C8 /* Pods-VideoResumeTests-resources.sh */,
+				9ED5C04B9D42CB0D20468369B910167B /* Pods-VideoResumeTests-umbrella.h */,
+				07BB161E87ABD0B94DCBBF32C09C0EAA /* Pods-VideoResumeTests.debug.xcconfig */,
+				67EB1BC540B5D0594F8764FBC0517D57 /* Pods-VideoResumeTests.release.xcconfig */,
+			);
+			name = "Pods-VideoResumeTests";
+			path = "Target Support Files/Pods-VideoResumeTests";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E3D7083E42DC57E2E14A04819FD779A7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				09E2774A33F6930AFF790CFE35B455DD /* Pods_VideoResume.framework */,
+				128B95BFD36CB3606AADC22D890B98A7 /* Pods_VideoResumeTests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4FEADC8226D6569EC672C1532CA78A13 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				701DD1FC079E515D6A8F890342DA5BAE /* Pods-VideoResumeTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1885EF00349BF6E6CAB036C299B16C0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6757C66CBE814A06E536297ED3CAF088 /* Pods-VideoResume-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		32B043E8A6CB894A9AA02E703A4190C1 /* Pods-VideoResume */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80D1BEFBBD28797D6DC7915B62C786A9 /* Build configuration list for PBXNativeTarget "Pods-VideoResume" */;
+			buildPhases = (
+				A9A5BCC8650142075280686C79611B97 /* Sources */,
+				E91B66C8FEA51C178F5321530330CDAA /* Frameworks */,
+				B1885EF00349BF6E6CAB036C299B16C0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-VideoResume";
+			productName = "Pods-VideoResume";
+			productReference = 09E2774A33F6930AFF790CFE35B455DD /* Pods_VideoResume.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A9C8D7C0BB7263A7B6A86CE4ADF6A825 /* Pods-VideoResumeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 929DBB251E8548E01142BF367A9613CD /* Build configuration list for PBXNativeTarget "Pods-VideoResumeTests" */;
+			buildPhases = (
+				17C821293D27D57AF494C3EA01AEBC73 /* Sources */,
+				538FD662A93B7918D3433A3D1C691D49 /* Frameworks */,
+				4FEADC8226D6569EC672C1532CA78A13 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-VideoResumeTests";
+			productName = "Pods-VideoResumeTests";
+			productReference = 128B95BFD36CB3606AADC22D890B98A7 /* Pods_VideoResumeTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = E3D7083E42DC57E2E14A04819FD779A7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				32B043E8A6CB894A9AA02E703A4190C1 /* Pods-VideoResume */,
+				A9C8D7C0BB7263A7B6A86CE4ADF6A825 /* Pods-VideoResumeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		17C821293D27D57AF494C3EA01AEBC73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50E49A4816EC37EEAE7A31D2F9E60D72 /* Pods-VideoResumeTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9A5BCC8650142075280686C79611B97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D11A4441C1EDA006A154B866913F135E /* Pods-VideoResume-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		156284431C64CB05C59BDA0595A1E95A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1EFE4CE0990E1CFCFCB77057C5B9F34F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67EB1BC540B5D0594F8764FBC0517D57 /* Pods-VideoResumeTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-VideoResumeTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-VideoResumeTests/Pods-VideoResumeTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_VideoResumeTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3ACDA641061860735148EA5A57756E9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6F830B0C99FB33F71837E8A004D00D9 /* Pods-VideoResume.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-VideoResume/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-VideoResume/Pods-VideoResume.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_VideoResume;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4B5066DD0B5AB2E0742E640CB41AEA7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6353C2121D6F8BA07EB57F2614010D7A /* Pods-VideoResume.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-VideoResume/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-VideoResume/Pods-VideoResume.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_VideoResume;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7DE9B927DA4D704465A298FE2720D40C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07BB161E87ABD0B94DCBBF32C09C0EAA /* Pods-VideoResumeTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-VideoResumeTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-VideoResumeTests/Pods-VideoResumeTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_VideoResumeTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C382132BB6BF8CA1A911872A2062FD0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C382132BB6BF8CA1A911872A2062FD0D /* Debug */,
+				156284431C64CB05C59BDA0595A1E95A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80D1BEFBBD28797D6DC7915B62C786A9 /* Build configuration list for PBXNativeTarget "Pods-VideoResume" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B5066DD0B5AB2E0742E640CB41AEA7E /* Debug */,
+				3ACDA641061860735148EA5A57756E9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		929DBB251E8548E01142BF367A9613CD /* Build configuration list for PBXNativeTarget "Pods-VideoResumeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7DE9B927DA4D704465A298FE2720D40C /* Debug */,
+				1EFE4CE0990E1CFCFCB77057C5B9F34F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
