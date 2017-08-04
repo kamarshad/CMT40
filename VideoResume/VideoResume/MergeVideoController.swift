@@ -84,7 +84,7 @@ class MergeVideoController: NSObject {
         return instruction
     }
     
-    func merge(sender: AnyObject?, completionHandler: @escaping () -> ()) {
+    func merge(sender: AnyObject?, completionHandler: @escaping (_ videoURL: URL) -> ()) {
         if let firstAsset = firstAsset, let secondAsset = secondAsset {
             //            activityMonitor.startAnimating()
             
@@ -247,7 +247,7 @@ class MergeVideoController: NSObject {
             exporter.exportAsynchronously(completionHandler: {
                 print("video saved at path: \(savePath)")
                 
-                completionHandler()
+                completionHandler(videoURL: url)
 //                
 //                self.firstAsset = nil
 //                self.secondAsset = nil

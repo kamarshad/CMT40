@@ -51,7 +51,7 @@ class QuestionaireViewController: UIViewController, VideoRecordDelegate {
             //Go to video merging screen
             
             let mergeObj = MergeVideoController()
-            mergeObj.merge(sender: sender as AnyObject, completionHandler: { 
+            mergeObj.merge(sender: sender as AnyObject, completionHandler: {
                 print("Completion received")
             })
         }
