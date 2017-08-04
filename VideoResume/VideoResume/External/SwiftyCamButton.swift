@@ -61,7 +61,7 @@ open class SwiftyCamButton: UIButton {
     
 
     func startStopVideoRecording() {
-        if isRecordingInProgress  {
+        if self.isRecordingInProgress  {
             self.isRecordingInProgress = false
             invalidateTimer()
             delegate?.buttonDidEndVideoRecording()

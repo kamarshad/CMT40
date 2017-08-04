@@ -510,12 +510,16 @@ open class SwiftyCamViewController: UIViewController {
                 if let notNillFolderName = self.outputFolderName {
                     outputFolderName = notNillFolderName
                 }
-
+/*
                 let documentDirPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0]
                 var fileURL = URL(fileURLWithPath: documentDirPath)
                 fileURL = fileURL.appendingPathComponent(outputFolderName)
-                let outputFilePath = fileURL.appendingPathComponent(outputFileName+"mov").absoluteString
-                
+                let outputFilePath = fileURL.appendingPathComponent(outputFileName+".mov").absoluteString
+ */
+                let outputFilePath = (NSTemporaryDirectory() as NSString).appendingPathComponent((outputFileName as NSString).appendingPathExtension("mov")!)
+                movieFileOutput.startRecording(toOutputFileURL: URL(fileURLWithPath: outputFilePath), recordingDelegate: self)
+
+                print("outputFilePath: \(outputFilePath)")
 				movieFileOutput.startRecording(toOutputFileURL: URL(fileURLWithPath: outputFilePath), recordingDelegate: self)
 				self.isVideoRecording = true
 				DispatchQueue.main.async {

@@ -33,10 +33,10 @@ class RecordVideoViewController : SwiftyCamViewController {
     }
 
     func setUp() {
-        self.cameraDelegate = self
-        self.maximumVideoDuration = 10 
+        self.maximumVideoDuration = 10
         self.audioEnabled = true
         self.outputFileName = self.presenter.getOutputFileName()
+        self.cameraDelegate = self
         self.configureOverylayOptions()
     }
     
