@@ -10,6 +10,8 @@
 		508DE2D74678EFE67E282DDB /* Pods_VideoResumeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D579FC18DEEB4FB435E6B02 /* Pods_VideoResumeTests.framework */; };
 		668F12D61F342F4F001482EA /* OnboardingContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 668F12D31F342F4F001482EA /* OnboardingContentViewController.m */; };
 		668F12D71F342F4F001482EA /* OnboardingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 668F12D51F342F4F001482EA /* OnboardingViewController.m */; };
+		668F12DB1F344460001482EA /* QuestionaireViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668F12D91F344460001482EA /* QuestionaireViewController.swift */; };
+		668F12DC1F344460001482EA /* QuestionaireViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 668F12DA1F344460001482EA /* QuestionaireViewController.xib */; };
 		B7E1F9EFA46788B34CDEAF61 /* Pods_VideoResume.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 246C18A5CC2C27DD7F848A4C /* Pods_VideoResume.framework */; };
 		E24460001F33926C00C9063E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2445FFF1F33926C00C9063E /* AppDelegate.swift */; };
 		E24460021F33926C00C9063E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24460011F33926C00C9063E /* ViewController.swift */; };
@@ -85,6 +87,8 @@
 		668F12D31F342F4F001482EA /* OnboardingContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OnboardingContentViewController.m; sourceTree = "<group>"; };
 		668F12D41F342F4F001482EA /* OnboardingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OnboardingViewController.h; sourceTree = "<group>"; };
 		668F12D51F342F4F001482EA /* OnboardingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OnboardingViewController.m; sourceTree = "<group>"; };
+		668F12D91F344460001482EA /* QuestionaireViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionaireViewController.swift; sourceTree = "<group>"; };
+		668F12DA1F344460001482EA /* QuestionaireViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuestionaireViewController.xib; sourceTree = "<group>"; };
 		673A80E7FA0BE52CA51722ED /* Pods-VideoResumeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoResumeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VideoResumeTests/Pods-VideoResumeTests.release.xcconfig"; sourceTree = "<group>"; };
 		AFBA6471A8DCD78FA1EE8025 /* Pods-VideoResumeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoResumeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VideoResumeTests/Pods-VideoResumeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E2445FFC1F33926C00C9063E /* VideoResume.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoResume.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -194,6 +198,15 @@
 			path = Source;
 			sourceTree = "<group>";
 		};
+		668F12D81F344406001482EA /* Questionaire */ = {
+			isa = PBXGroup;
+			children = (
+				668F12D91F344460001482EA /* QuestionaireViewController.swift */,
+				668F12DA1F344460001482EA /* QuestionaireViewController.xib */,
+			);
+			path = Questionaire;
+			sourceTree = "<group>";
+		};
 		9ACC221582E1644F329181BA /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -228,6 +241,7 @@
 		E2445FFE1F33926C00C9063E /* VideoResume */ = {
 			isa = PBXGroup;
 			children = (
+				668F12D81F344406001482EA /* Questionaire */,
 				E2E05AA71F33A2E900B2DCC8 /* Application */,
 				E2E05A9A1F33A2CA00B2DCC8 /* Common */,
 				E2E05A951F339E0500B2DCC8 /* VideoResume-Bridging-Header.h */,
@@ -539,6 +553,7 @@
 				E2E05ADC1F33A71400B2DCC8 /* video1.mp4 in Resources */,
 				E2E05ADF1F33A71400B2DCC8 /* yellow.png in Resources */,
 				E2E05AD11F33A71400B2DCC8 /* shark.png in Resources */,
+				668F12DC1F344460001482EA /* QuestionaireViewController.xib in Resources */,
 				E2E05AD01F33A71400B2DCC8 /* sf-outer-limits.upright.ttf in Resources */,
 				E2E05AD51F33A71400B2DCC8 /* space3.png in Resources */,
 				E2E05AD41F33A71400B2DCC8 /* space2.png in Resources */,
@@ -674,6 +689,7 @@
 				668F12D71F342F4F001482EA /* OnboardingViewController.m in Sources */,
 				E2E05AA41F33A2CA00B2DCC8 /* NavigationController.swift in Sources */,
 				E244603D1F3393B100C9063E /* RecordVideoWireframe.swift in Sources */,
+				668F12DB1F344460001482EA /* QuestionaireViewController.swift in Sources */,
 				E2E05AA51F33A2CA00B2DCC8 /* Presenter.swift in Sources */,
 				E2E05AA61F33A2CA00B2DCC8 /* Wireframe.swift in Sources */,
 				E244602B1F3392CB00C9063E /* SwiftyCamButton.swift in Sources */,
@@ -813,7 +829,7 @@
 			baseConfigurationReference = 43930069A8EF3CD83436C3D2 /* Pods-VideoResume.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Mohd Kamar Shad (C7RQ88M6UK)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Nikhil Lihla (9W768ZYU9K)";
 				DEVELOPMENT_TEAM = D5NWSMACX3;
 				INFOPLIST_FILE = VideoResume/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -831,7 +847,7 @@
 			baseConfigurationReference = 3F62437FFD4E8553016830A8 /* Pods-VideoResume.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Mohd Kamar Shad (C7RQ88M6UK)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Nikhil Lihla (9W768ZYU9K)";
 				DEVELOPMENT_TEAM = D5NWSMACX3;
 				INFOPLIST_FILE = VideoResume/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

@@ -8,11 +8,20 @@
 
 import UIKit
 
-class RecordVideoScreenInteractor {
+protocol RecordVideoScreenInteractor {
 
+    func getVideoFileName() -> String
 }
 
 class RecordVideoScreenInteractorImpl: RecordVideoScreenInteractor {
     
+    fileprivate var fileName:String
     
+    init(name:String) {
+        self.fileName = name
+    }
+    
+    func getVideoFileName() -> String {
+        return self.fileName
+    }
 }
