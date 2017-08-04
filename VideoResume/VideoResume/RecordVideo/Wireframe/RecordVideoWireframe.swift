@@ -11,12 +11,19 @@ import UIKit
 protocol RecordVideoWireframe {
 
     func goBackToPreviousScreen()
+    func goToNextScreen()
 }
 
-class RecordVideoWireframeImpl: RecordVideoWireframe {
+class RecordVideoWireframeDelegate {
+    
+}
+
+class RecordVideoWireframeImpl: Wireframe, RecordVideoWireframe {
+    
+    fileprivate  var delegate:RecordVideoWireframeDelegate?
     
     static func push(_ navigationController: UINavigationController, animated:Bool) {
-        let wireframe = RecordVideoWireframeImpl()
+        let wireframe = RecordVideoWireframeImpl(navigationController: navigationController)
         let view = RecordVideoViewController.instantiateFromStoryboard()
         let screenInteractor = RecordVideoScreenInteractorImpl()
         let presenter = RecordVideoPresenter(wireframe: wireframe, screenInteractor: screenInteractor)
@@ -32,7 +39,11 @@ class RecordVideoWireframeImpl: RecordVideoWireframe {
     }
     
     func goBackToPreviousScreen() {
-    
+        self.navigationController.popViewController(animated: true)
     }
     
+    func goToNextScreen() {
+        //Inform next class to prepare data
+    }
+
 }

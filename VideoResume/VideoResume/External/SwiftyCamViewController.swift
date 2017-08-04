@@ -93,7 +93,7 @@ open class SwiftyCamViewController: UIViewController {
 
 	public weak var cameraDelegate: SwiftyCamViewControllerDelegate?
 
-	/// Maxiumum video duration if SwiftyCamButton is used
+	/// Maxiumum video duration( In seconds) if SwiftyCamButton is used
 
 	public var maximumVideoDuration : Double     = 0.0
 
@@ -244,6 +244,9 @@ open class SwiftyCamViewController: UIViewController {
 	fileprivate var deviceOrientation            : UIDeviceOrientation?
 
 	/// Disable view autorotation for forced portrait recorindg
+    
+    
+    var outputFileName:String!
 
 	override open var shouldAutorotate: Bool {
 		return allowAutoRotate
@@ -497,7 +500,10 @@ open class SwiftyCamViewController: UIViewController {
 				movieFileOutputConnection?.videoOrientation = self.getVideoOrientation()
 
 				// Start recording to a temporary file.
-				let outputFileName = UUID().uuidString
+				var outputFileName = UUID().uuidString
+                if let notNilFileName = self.outputFileName {
+                    outputFileName = notNilFileName
+                }
 				let outputFilePath = (NSTemporaryDirectory() as NSString).appendingPathComponent((outputFileName as NSString).appendingPathExtension("mov")!)
 				movieFileOutput.startRecording(toOutputFileURL: URL(fileURLWithPath: outputFilePath), recordingDelegate: self)
 				self.isVideoRecording = true
